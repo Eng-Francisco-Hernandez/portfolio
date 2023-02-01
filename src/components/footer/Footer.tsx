@@ -9,7 +9,7 @@ export default function Footer() {
       direction="column"
       alignItems="center"
       justifyContent="center"
-      minHeight={200}
+      sx={{ mt: 20, mb: 8 }}
     >
       <Grid item xs={12}>
         <Typography component={"span"} variant="body1" color="text.secondary">
