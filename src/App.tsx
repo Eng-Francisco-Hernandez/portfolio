@@ -15,6 +15,10 @@ const customTheme = createTheme({
       secondary: "#e1e7ff",
       disabled: "#f0f0f0",
     },
+    action: {
+      disabledBackground: "#b8c7fe",
+      disabled: "#f5f7ff",
+    },
   },
   typography: {
     fontFamily: `sans-serif, "Roboto", "Helvetica", "Arial"`,

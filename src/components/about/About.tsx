@@ -37,7 +37,7 @@ export default function About() {
       </Grid>
       <Grid item xs={4}>
         <Grid item xs={4}>
-          <img src={profilePicture} className="profile-picture" />
+          <img alt="profile" src={profilePicture} className="profile-picture" />
         </Grid>
       </Grid>
     </Grid>
