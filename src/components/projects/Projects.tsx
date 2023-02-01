@@ -12,6 +12,31 @@ import stockMarketToolsImg from "../../assets/images/projects/stock-market-tools
 import GitHubIcon from "@mui/icons-material/GitHub";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 
+interface ProjectItem {
+  technologies: string[];
+  githubLink: string;
+  externalLink: string;
+  img: string;
+  title: string;
+  description: string;
+}
+
+const projectItems: ProjectItem[] = [
+  {
+    technologies: ["TypeScript", "Sass", "React", "MUI", "Node.js"],
+    githubLink: "https://github.com/Eng-Francisco-Hernandez/stock-market-tools",
+    externalLink:
+      "https://eng-francisco-hernandez.github.io/stock-market-tools/",
+    img: stockMarketToolsImg,
+    title: "Stock market tools",
+    description: `An application built to show hot to use common features in a
+              trading application like getting historical data for symbols,
+              displaying graphs and search for stock market latest news. The
+              third parties used to implement the trading related features in
+              the project were Alpaca and Tiingo`,
+  },
+];
+
 export default function Projects() {
   return (
     <Grid container spacing={2} sx={{ mt: 15, mb: 8 }}>
@@ -20,62 +45,57 @@ export default function Projects() {
           My projects
         </Typography>
       </Grid>
-      <Grid item xs={12}>
-        <Card className="project-card">
-          <CardHeader
-            sx={{ padding: "0px" }}
-            subheader={
-              <Typography
-                component={"span"}
-                variant="body2"
-                className="project-technology-list"
-              >
-                <ul>
-                  <li> TypeScript </li>
-                  <li> Sass</li>
-                  <li> React</li>
-                  <li> MUI</li>
-                  <li> Node.js</li>
-                </ul>
-              </Typography>
-            }
-            action={
-              <div className="card-header-actions-container">
-                <IconButton
-                  href="https://github.com/Eng-Francisco-Hernandez/stock-market-tools"
-                  target="_blank"
-                  color="primary"
-                >
-                  <GitHubIcon />
-                </IconButton>
-                <IconButton
-                  href="https://eng-francisco-hernandez.github.io/stock-market-tools/"
-                  target="_blank"
-                  color="primary"
-                >
-                  <OpenInNewIcon />
-                </IconButton>
-              </div>
-            }
-          />
-          <CardMedia
-            sx={{ height: 250 }}
-            image={stockMarketToolsImg}
-          />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              Stock market tools
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              An application built to show hot to use common features in a
-              trading application like getting historical data for symbols,
-              displaying graphs and search for stock market latest newx. The
-              third parties used to implement the trading related features in
-              the project were Alpaca and Tiingo
-            </Typography>
-          </CardContent>
-        </Card>
-      </Grid>
+      {projectItems.map((item, i) => {
+        return (
+          <Grid item xs={12} key={i}>
+            <Card className="project-card">
+              <CardHeader
+                sx={{ padding: "0px" }}
+                subheader={
+                  <Typography
+                    component={"span"}
+                    variant="body2"
+                    className="project-technology-list"
+                  >
+                    <ul>
+                      {item.technologies.map((technology, j) => {
+                        return <li key={j}> {technology} </li>;
+                      })}
+                    </ul>
+                  </Typography>
+                }
+                action={
+                  <div className="card-header-actions-container">
+                    <IconButton
+                      href={item.githubLink}
+                      target="_blank"
+                      color="primary"
+                    >
+                      <GitHubIcon />
+                    </IconButton>
+                    <IconButton
+                      href={item.externalLink}
+                      target="_blank"
+                      color="primary"
+                    >
+                      <OpenInNewIcon />
+                    </IconButton>
+                  </div>
+                }
+              />
+              <CardMedia sx={{ height: 250 }} image={item.img} />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                  {item.title}
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  {item.description}
+                </Typography>
+              </CardContent>
+            </Card>
+          </Grid>
+        );
+      })}
     </Grid>
   );
 }
