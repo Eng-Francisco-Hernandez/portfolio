@@ -1,20 +1,23 @@
-import React from 'react';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { Landing } from './pages';
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { Landing } from "./pages";
+import "./theme/main.scss";
 
 const customTheme = createTheme({
   palette: {
     // mode: "dark",
     primary: {
-      main: "#011c7e",
+      main: "#000a41",
       light: "#4e73fe",
       dark: "#01114c",
     },
     text: {
-      primary: "#01114c",
-      secondary: "#0127b1",
-      disabled: "#819bfe",
+      primary: "#fff",
+      secondary: "#F0F8FF",
+      disabled: "#f0f0f0",
     },
+  },
+  typography: {
+    fontFamily: `sans-serif, "Roboto", "Helvetica", "Arial"`,
   },
 });
 
@@ -22,7 +25,7 @@ function App() {
   return (
     <ThemeProvider theme={customTheme}>
       <div className="App">
-        <Landing></Landing>
+        <Landing />
       </div>
     </ThemeProvider>
   );

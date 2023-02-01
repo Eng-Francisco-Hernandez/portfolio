@@ -1,0 +1,8 @@
+.bottom-corner-fixed-container {
+  position: fixed;
+  bottom: 0px;
+  padding: 20px;
+  &.right {
+    right: 0px;
+  }
+}
