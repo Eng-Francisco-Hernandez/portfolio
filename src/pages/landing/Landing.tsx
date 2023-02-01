@@ -2,7 +2,13 @@ import { Container, Toolbar } from "@mui/material";
 
 import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
-import { About, Navbar, SocialNetworkItems } from "../../components";
+import {
+  About,
+  Experience,
+  Introduction,
+  Navbar,
+  SocialNetworkItems,
+} from "../../components";
 import "./landing.scss";
 
 export default function Landing() {
@@ -19,7 +25,9 @@ export default function Landing() {
       >
         <Toolbar />
         <Container maxWidth="md">
+          <Introduction />
           <About />
+          <Experience />
         </Container>
         <SocialNetworkItems />
       </Box>
