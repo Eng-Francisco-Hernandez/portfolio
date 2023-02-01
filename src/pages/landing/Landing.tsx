@@ -22,9 +22,6 @@ export default function Landing() {
       <Box
         className="main-layout"
         component="main"
-        sx={{
-          p: 2,
-        }}
       >
         <Toolbar />
         <Container maxWidth="md">
