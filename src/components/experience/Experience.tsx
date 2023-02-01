@@ -9,19 +9,19 @@ interface TabItem {
 const tabItems: TabItem[] = [
   {
     title: "ShareGRO",
-    content: 'ShareGRO'
+    content: "ShareGRO",
   },
   {
     title: "Onramp",
-    content: 'Onramp'
+    content: "Onramp",
   },
   {
     title: "RLI",
-    content: 'RLI'
+    content: "RLI",
   },
   {
     title: "Pragmation",
-    content: 'Pragmation'
+    content: "Pragmation",
   },
 ];
 
@@ -86,12 +86,12 @@ export default function Experience() {
             sx={{ borderRight: 1, borderColor: "divider" }}
           >
             {tabItems.map((tabItem, i) => {
-              return <Tab label={tabItem.title} {...a11yProps(i)} />;
+              return <Tab label={tabItem.title} {...a11yProps(i)} key={i} />;
             })}
           </Tabs>
           {tabItems.map((tabItem, i) => {
             return (
-              <TabPanel value={value} index={i}>
+              <TabPanel value={value} index={i} key={i}>
                 {tabItem.content}
               </TabPanel>
             );

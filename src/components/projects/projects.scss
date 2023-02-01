@@ -1,0 +1,16 @@
+.project-card {
+  background: rgb(0, 212, 255);
+  background: linear-gradient(
+    201deg,
+    rgba(0, 212, 255, 1) 0%,
+    rgba(0, 33, 154, 1) 80%
+  );
+}
+
+.project-technology-list {
+  font-weight: bold;
+  li {
+    display: inline;
+    margin: 0 20px;
+  }
+}

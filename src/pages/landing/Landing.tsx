@@ -4,9 +4,11 @@ import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
 import {
   About,
+  Contact,
   Experience,
   Introduction,
   Navbar,
+  Projects,
   SocialNetworkItems,
 } from "../../components";
 import "./landing.scss";
@@ -28,6 +30,8 @@ export default function Landing() {
           <Introduction />
           <About />
           <Experience />
+          <Projects />
+          <Contact />
         </Container>
         <SocialNetworkItems />
       </Box>
