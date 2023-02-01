@@ -10,7 +10,7 @@ export default function Introduction() {
         <Typography variant="h2">
           Francisco Hernández
         </Typography>
-        <Typography variant="h4" sx={{ mb: 4 }}>
+        <Typography variant="h4" sx={{ mb: 4 }} color="text.secondary">
           And I love software development!
         </Typography>
         <Typography variant="h6">

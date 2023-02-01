@@ -1,6 +1,6 @@
-import Box from '@mui/material/Box';
-import MenuIcon from '@mui/icons-material/Menu';
-import React from 'react';
+import Box from "@mui/material/Box";
+import MenuIcon from "@mui/icons-material/Menu";
+import React from "react";
 import {
   AppBar,
   Button,
@@ -14,6 +14,7 @@ import {
   Toolbar,
   Typography,
 } from "@mui/material";
+import "./navbar.scss";
 const drawerWidth = 240;
 const navItems = ["About", "Experience", "Work", "Contact", "Resume"];
 
@@ -25,9 +26,9 @@ export default function Navbar() {
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
+    <Box onClick={handleDrawerToggle} className="side-bar">
       <Typography variant="h6" sx={{ my: 2 }}>
-        MUI
+        Options
       </Typography>
       <Divider />
       <List>

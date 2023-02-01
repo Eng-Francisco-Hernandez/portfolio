@@ -11,8 +11,8 @@ const customTheme = createTheme({
       dark: "#01114c",
     },
     text: {
-      primary: "#fff",
-      secondary: "#F0F8FF",
+      primary: "#f0f3ff",
+      secondary: "#e1e7ff",
       disabled: "#f0f0f0",
     },
   },

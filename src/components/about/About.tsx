@@ -9,32 +9,30 @@ export default function About() {
         <Typography variant="h5" sx={{ mb: 2 }}>
           About me
         </Typography>
-        <Typography variant="body1">
+        <Typography component={"span"} variant="body1" color="text.secondary">
           My name is Francisco, and I love software development since it allows
           me to create new things, such as web and mobile applications, turning
           ideas into reality!
           <br />
           <br />
-          <Typography variant="body1">
-            Here are some of the technologies I've been working with recently
-          </Typography>
-          <Typography variant="body2">
-            <ul>
-              <li> JavaScript (ES6+) </li>
-              <li> TypeScript </li>
-              <li> HTML/CSS/SASS</li>
-              <li> React.js</li>
-              <li> Ionic</li>
-              <li> MUI</li>
-              <li> Storybook</li>
-              <li> Apollo Client</li>
-              <li> Node.js</li>
-              <li> Express.js</li>
-              <li> MongoDB</li>
-              <li> PostgreSQL</li>
-              <li> Python</li>
-            </ul>
-          </Typography>
+          Here are some of the technologies I've been working with recently
+        </Typography>
+        <Typography component={"span"} variant="body2" className="custom-col-number-list">
+          <ul>
+            <li> JavaScript (ES6+) </li>
+            <li> TypeScript </li>
+            <li> HTML/CSS/SASS</li>
+            <li> React.js</li>
+            <li> Ionic</li>
+            <li> MUI</li>
+            <li> Storybook</li>
+            <li> Apollo Client</li>
+            <li> Node.js</li>
+            <li> Express.js</li>
+            <li> MongoDB</li>
+            <li> PostgreSQL</li>
+            <li> Python</li>
+          </ul>
         </Typography>
       </Grid>
       <Grid item xs={4}>
