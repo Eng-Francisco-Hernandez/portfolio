@@ -18,6 +18,9 @@ const customTheme = createTheme({
   },
   typography: {
     fontFamily: `sans-serif, "Roboto", "Helvetica", "Arial"`,
+    button: {
+      textTransform: "none",
+    },
   },
 });
 

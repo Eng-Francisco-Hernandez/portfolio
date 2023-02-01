@@ -40,7 +40,7 @@ export default function Projects() {
               </Typography>
             }
             action={
-              <>
+              <div className="card-header-actions-container">
                 <IconButton
                   href="https://github.com/Eng-Francisco-Hernandez/stock-market-tools"
                   target="_blank"
@@ -55,7 +55,7 @@ export default function Projects() {
                 >
                   <OpenInNewIcon />
                 </IconButton>
-              </>
+              </div>
             }
           />
           <CardMedia

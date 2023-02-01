@@ -6,6 +6,7 @@ import {
   About,
   Contact,
   Experience,
+  Footer,
   Introduction,
   Navbar,
   Projects,
@@ -32,6 +33,7 @@ export default function Landing() {
           <Experience />
           <Projects />
           <Contact />
+          <Footer />
         </Container>
         <SocialNetworkItems />
       </Box>
