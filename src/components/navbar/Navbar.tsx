@@ -6,6 +6,7 @@ import {
   Button,
   Divider,
   Drawer,
+  Fab,
   IconButton,
   List,
   ListItem,
@@ -15,6 +16,8 @@ import {
   Typography,
 } from "@mui/material";
 import "./navbar.scss";
+import SocialNetworkItems from "../social-network-items/SocialNetworkItems";
+import { socialNetworkItems } from "../../util-constants";
 const drawerWidth = 240;
 const navItems = ["About", "Experience", "Work", "Contact", "Resume"];
 
@@ -28,7 +31,7 @@ export default function Navbar() {
   const drawer = (
     <Box onClick={handleDrawerToggle} className="side-bar">
       <Typography variant="h6" sx={{ my: 2 }}>
-        Options
+        Quick links
       </Typography>
       <Divider />
       <List>
@@ -40,6 +43,22 @@ export default function Navbar() {
           </ListItem>
         ))}
       </List>
+      <div className="drawer-social-network-items-container">
+        {socialNetworkItems.map((item, i) => {
+          return (
+            <Fab
+              size="small"
+              color="primary"
+              href={item.link}
+              target="_blank"
+              key={i}
+              sx={{ mr: 2 }}
+            >
+              {item.icon}
+            </Fab>
+          );
+        })}
+      </div>
     </Box>
   );
 

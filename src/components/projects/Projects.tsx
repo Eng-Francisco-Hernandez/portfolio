@@ -1,16 +1,17 @@
+import GitHubIcon from "@mui/icons-material/GitHub";
+import OpenInNewIcon from "@mui/icons-material/OpenInNew";
+import stockMarketToolsImg from "../../assets/images/projects/stock-market-tools.png";
+import "./projects.scss";
 import {
   Card,
   CardContent,
   CardHeader,
   CardMedia,
+  Chip,
   Grid,
   IconButton,
   Typography,
 } from "@mui/material";
-import "./projects.scss";
-import stockMarketToolsImg from "../../assets/images/projects/stock-market-tools.png";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 
 interface ProjectItem {
   technologies: string[];
@@ -52,16 +53,17 @@ export default function Projects() {
               <CardHeader
                 sx={{ padding: "0px" }}
                 subheader={
-                  <Typography
-                    component={"span"}
-                    variant="body2"
-                    className="project-technology-list"
-                  >
-                    <ul>
-                      {item.technologies.map((technology, j) => {
-                        return <li key={j}> {technology} </li>;
-                      })}
-                    </ul>
+                  <Typography component={"span"} variant="body2">
+                    {item.technologies.map((technology, j) => {
+                      return (
+                        <Chip
+                          sx={{ mr: 1, ml: 1, mb: 1 }}
+                          label={technology}
+                          size="small"
+                          key={j}
+                        ></Chip>
+                      );
+                    })}
                   </Typography>
                 }
                 action={

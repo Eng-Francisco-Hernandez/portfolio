@@ -94,7 +94,7 @@ function TabPanel(props: TabPanelProps) {
       {...other}
     >
       {value === index && (
-        <Grid item sx={{ maxWidth: 700, p: 1 }}>
+        <Grid item sx={{ p: 1 }}>
           <Typography variant="h6">
             {`${children.title} @ ${children.company}`}
           </Typography>
@@ -161,7 +161,6 @@ export default function Experience() {
           sx={{
             flexGrow: 1,
             display: "flex",
-            maxHeight: 300,
           }}
         >
           <Tabs
@@ -169,7 +168,7 @@ export default function Experience() {
             variant="scrollable"
             value={value}
             onChange={handleChange}
-            sx={{ borderRight: 1, borderColor: "divider" }}
+            sx={{ borderRight: 1, borderColor: "divider", minWidth: 120 }}
           >
             {experienceItems.map((item, i) => {
               return <Tab label={item.company} {...a11yProps(i)} key={i} />;

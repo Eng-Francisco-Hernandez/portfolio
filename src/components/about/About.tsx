@@ -21,7 +21,9 @@ export default function About() {
           <ul>
             <li> JavaScript (ES6+) </li>
             <li> TypeScript </li>
-            <li> HTML/CSS/Sass</li>
+            <li> HTML</li>
+            <li> CSS</li>
+            <li> Sass</li>
             <li> React.js</li>
             <li> Ionic</li>
             <li> MUI</li>

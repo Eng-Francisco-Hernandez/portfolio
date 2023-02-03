@@ -22,6 +22,21 @@
   }
 }
 
+@mixin custom-col-number-list-breakpoint-generator(
+  $breakpoint-width,
+  $font-size,
+  $col-number
+) {
+  @media only screen and (max-width: $breakpoint-width) {
+    font-size: $font-size !important;
+    ul {
+      -webkit-column-count: $col-number;
+      -moz-column-count: $col-number;
+      column-count: $col-number;
+    }
+  }
+}
+
 .custom-col-number-list {
   ul {
     list-style: none;
@@ -31,6 +46,8 @@
     -moz-column-count: 3;
     column-count: 3;
   }
+  @include custom-col-number-list-breakpoint-generator(600px, 14px, 2);
+  @include custom-col-number-list-breakpoint-generator(300px, 12px, 1);
 }
 
 ul {

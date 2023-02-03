@@ -1,29 +1,6 @@
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import { Fab } from '@mui/material';
-import { ReactNode } from 'react';
-import './social-network-items.scss';
-
-
-interface SocialNetworkItem {
-  link: string;
-  icon: ReactNode | string;
-}
-
-const socialNetworkItems: SocialNetworkItem[] = [
-  {
-    link: "https://github.com/Eng-Francisco-Hernandez",
-    icon: <GitHubIcon />,
-  },
-  {
-    link: "https://www.linkedin.com/in/francisco-hern%C3%A1ndez-582377230/",
-    icon: <LinkedInIcon />,
-  },
-  {
-    link: "https://medium.com/@fjch87",
-    icon: "M",
-  },
-];
+import { Fab } from "@mui/material";
+import { socialNetworkItems } from "../../util-constants";
+import "./social-network-items.scss";
 
 export default function SocialNetworkItems() {
   return (
