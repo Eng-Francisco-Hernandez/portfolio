@@ -3,6 +3,7 @@ import { Grid, Typography, Button } from "@mui/material";
 export default function Introduction() {
   return (
     <Grid
+      className="animate__bounceIn"
       container
       spacing={2}
       direction="column"

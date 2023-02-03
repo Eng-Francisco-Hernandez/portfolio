@@ -1,6 +1,7 @@
-import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { Landing } from "./pages";
-import "./theme/main.scss";
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { Landing } from './pages';
+import './theme/main.scss';
+import 'animate.css/animate.min.css';
 
 const customTheme = createTheme({
   palette: {

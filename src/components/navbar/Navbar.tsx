@@ -16,7 +16,6 @@ import {
   Typography,
 } from "@mui/material";
 import "./navbar.scss";
-import SocialNetworkItems from "../social-network-items/SocialNetworkItems";
 import { socialNetworkItems } from "../../util-constants";
 const drawerWidth = 240;
 const navItems = ["About", "Experience", "Work", "Contact", "Resume"];
