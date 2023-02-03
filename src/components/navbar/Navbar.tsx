@@ -1,6 +1,9 @@
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import Box from "@mui/material/Box";
 import MenuIcon from "@mui/icons-material/Menu";
 import React from "react";
+import { socialNetworkItems } from "../../util-constants";
+import "./navbar.scss";
 import {
   AppBar,
   Button,
@@ -15,10 +18,29 @@ import {
   Toolbar,
   Typography,
 } from "@mui/material";
-import "./navbar.scss";
-import { socialNetworkItems } from "../../util-constants";
 const drawerWidth = 240;
-const navItems = ["About", "Experience", "Work", "Contact", "Resume"];
+const navItems = [
+  {
+    title: "Introduction",
+    href: "#Introduction",
+  },
+  {
+    title: "About",
+    href: "#About",
+  },
+  {
+    title: "Experience",
+    href: "#Experience",
+  },
+  {
+    title: "Work",
+    href: "#Work",
+  },
+  {
+    title: "Contact",
+    href: "#Contact",
+  },
+];
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -34,12 +56,17 @@ export default function Navbar() {
       </Typography>
       <Divider />
       <List>
-        {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText primary={item} />
-            </ListItemButton>
-          </ListItem>
+        {navItems.map((item, i) => (
+          <AnchorLink href={item.href} key={i} offset={100} style={{
+            textDecoration: "none",
+            color: "#fff"
+          }}>
+            <ListItem disablePadding>
+              <ListItemButton sx={{ textAlign: "center" }}>
+                <ListItemText primary={item.title} />
+              </ListItemButton>
+            </ListItem>
+          </AnchorLink>
         ))}
       </List>
       <div className="drawer-social-network-items-container">
@@ -82,11 +109,12 @@ export default function Navbar() {
             Francisco Hernández
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
-            {navItems.map((item) => (
-              <Button key={item} sx={{ color: "#fff" }}>
-                {item}
-              </Button>
+            {navItems.map((item, i) => (
+              <AnchorLink href={item.href} key={i} offset={100}>
+                <Button sx={{ color: "#fff" }}>{item.title}</Button>
+              </AnchorLink>
             ))}
+            <Button sx={{ color: "#fff" }}>Resume</Button>
           </Box>
         </Toolbar>
       </AppBar>

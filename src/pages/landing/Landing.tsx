@@ -22,18 +22,18 @@ export default function Landing() {
       <Box className="main-layout" component="main">
         <Toolbar />
         <Container maxWidth="md">
-            <Introduction />
+          <Introduction id="Introduction" />
           <AnimationOnScroll animateIn="animate__bounceIn" animateOnce>
-            <About />
+            <About id="About" />
           </AnimationOnScroll>
           <AnimationOnScroll animateIn="animate__bounceIn" animateOnce>
-            <Experience />
+            <Experience id="Experience" />
           </AnimationOnScroll>
           <AnimationOnScroll animateIn="animate__bounceIn" animateOnce>
-            <Projects />
+            <Projects id="Work" />
           </AnimationOnScroll>
           <AnimationOnScroll animateIn="animate__bounceIn" animateOnce>
-            <Contact />
+            <Contact id="Contact" />
           </AnimationOnScroll>
           <AnimationOnScroll animateIn="animate__bounceIn" animateOnce>
             <Footer />

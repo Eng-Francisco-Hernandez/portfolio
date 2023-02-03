@@ -1,8 +1,14 @@
 import { Grid, Typography, Button } from "@mui/material";
 
-export default function Introduction() {
+interface IntroductionProps {
+  id?: string;
+}
+
+export default function Introduction(props: IntroductionProps) {
+  const { id } = props;
   return (
     <Grid
+      id={id}
       className="animate__bounceIn"
       container
       spacing={2}
@@ -32,7 +38,9 @@ export default function Introduction() {
         <Button sx={{ mr: 2 }} variant="contained">
           View resume
         </Button>
-        <Button variant="outlined">See my work</Button>
+        <Button variant="outlined" sx={{ color: "#fff" }}>
+          See my work
+        </Button>
       </Grid>
     </Grid>
   );

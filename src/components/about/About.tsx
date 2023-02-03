@@ -2,9 +2,10 @@ import profilePicture from "../../assets/images/Official.jpg";
 import { Grid, Typography } from "@mui/material";
 import "./about.scss";
 
-export default function About() {
+export default function About(props: any) {
+  const { id } = props;
   return (
-    <Grid container spacing={2} sx={{ mt: 20, mb: 8 }}>
+    <Grid id={id} container spacing={2} sx={{ mt: 20, mb: 8 }}>
       <Grid item xs={8}>
         <Typography variant="h5" sx={{ mb: 2 }}>
           About me
@@ -17,7 +18,11 @@ export default function About() {
           <br />
           Here are some of the technologies I've been working with recently
         </Typography>
-        <Typography component={"span"} variant="body2" className="custom-col-number-list">
+        <Typography
+          component={"span"}
+          variant="body2"
+          className="custom-col-number-list"
+        >
           <ul>
             <li> JavaScript (ES6+) </li>
             <li> TypeScript </li>

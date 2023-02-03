@@ -38,9 +38,14 @@ const projectItems: ProjectItem[] = [
   },
 ];
 
-export default function Projects() {
+interface ProjectsProps {
+  id?: string;
+}
+
+export default function Projects(props: ProjectsProps) {
+  const { id } = props;
   return (
-    <Grid container spacing={2} sx={{ mt: 15, mb: 8 }}>
+    <Grid id={id} container spacing={2} sx={{ mt: 15, mb: 8 }}>
       <Grid item xs={12}>
         <Typography variant="h5" sx={{ mb: 2 }}>
           My projects

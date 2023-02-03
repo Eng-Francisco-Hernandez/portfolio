@@ -74,7 +74,13 @@ function a11yProps(index: number) {
   };
 }
 
-export default function Experience() {
+interface ExperienceProps {
+  id?: string;
+}
+
+export default function Experience(props: ExperienceProps) {
+  const { id } = props;
+
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
@@ -82,7 +88,7 @@ export default function Experience() {
   };
 
   return (
-    <Grid container spacing={2} sx={{ mt: 15, mb: 8 }}>
+    <Grid id={id} container spacing={2} sx={{ mt: 15, mb: 8 }}>
       <Grid item xs={12}>
         <Typography variant="h5" sx={{ mb: 2 }}>
           Where I've worked
