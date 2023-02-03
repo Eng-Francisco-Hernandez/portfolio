@@ -41,6 +41,7 @@ const navItems = [
     href: "#Contact",
   },
 ];
+const personalResume = require("../../assets/files/personal_resume.pdf");
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -57,10 +58,15 @@ export default function Navbar() {
       <Divider />
       <List>
         {navItems.map((item, i) => (
-          <AnchorLink href={item.href} key={i} offset={100} style={{
-            textDecoration: "none",
-            color: "#fff"
-          }}>
+          <AnchorLink
+            href={item.href}
+            key={i}
+            offset={100}
+            style={{
+              textDecoration: "none",
+              color: "#fff",
+            }}
+          >
             <ListItem disablePadding>
               <ListItemButton sx={{ textAlign: "center" }}>
                 <ListItemText primary={item.title} />
@@ -68,6 +74,15 @@ export default function Navbar() {
             </ListItem>
           </AnchorLink>
         ))}
+        <ListItem disablePadding>
+          <ListItemButton
+            href={personalResume}
+            target="_blank"
+            sx={{ textAlign: "center" }}
+          >
+            <ListItemText primary="Resume" />
+          </ListItemButton>
+        </ListItem>
       </List>
       <div className="drawer-social-network-items-container">
         {socialNetworkItems.map((item, i) => {
@@ -114,7 +129,14 @@ export default function Navbar() {
                 <Button sx={{ color: "#fff" }}>{item.title}</Button>
               </AnchorLink>
             ))}
-            <Button sx={{ color: "#fff" }}>Resume</Button>
+            <Button
+              href={personalResume}
+              variant="outlined"
+              target="_blank"
+              sx={{ color: "#fff", borderColor: "#fff", ml: 2 }}
+            >
+              Resume
+            </Button>
           </Box>
         </Toolbar>
       </AppBar>
