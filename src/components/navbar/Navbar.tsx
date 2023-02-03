@@ -125,7 +125,7 @@ export default function Navbar() {
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item, i) => (
-              <AnchorLink href={item.href} key={i} offset={100}>
+              <AnchorLink href={item.href} key={i} offset={100} style={{textDecoration: "none"}}>
                 <Button sx={{ color: "#fff" }}>{item.title}</Button>
               </AnchorLink>
             ))}

@@ -35,9 +35,7 @@ export default function Landing() {
           <AnimationOnScroll animateIn="animate__bounceIn" animateOnce>
             <Contact id="Contact" />
           </AnimationOnScroll>
-          <AnimationOnScroll animateIn="animate__bounceIn" animateOnce>
-            <Footer />
-          </AnimationOnScroll>
+          <Footer />
         </Container>
         <SocialNetworkItems />
       </Box>

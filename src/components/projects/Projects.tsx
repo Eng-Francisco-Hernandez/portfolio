@@ -56,13 +56,13 @@ export default function Projects(props: ProjectsProps) {
           <Grid item xs={12} key={i}>
             <Card className="project-card">
               <CardHeader
-                sx={{ padding: "0px" }}
+                sx={{ padding: "0" }}
                 subheader={
                   <Typography component={"span"} variant="body2">
                     {item.technologies.map((technology, j) => {
                       return (
                         <Chip
-                          sx={{ mr: 1, ml: 1, mb: 1 }}
+                          sx={{ mt: 1, mr: 1, ml: 1, mb: 1 }}
                           label={technology}
                           size="small"
                           key={j}

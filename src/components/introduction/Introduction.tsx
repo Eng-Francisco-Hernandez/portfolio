@@ -44,7 +44,7 @@ export default function Introduction(props: IntroductionProps) {
         >
           View resume
         </Button>
-        <AnchorLink href="#Work" offset={100}>
+        <AnchorLink href="#Work" offset={100} style={{textDecoration: "none"}}>
           <Button
             variant="outlined"
             sx={{ color: "#fff", borderColor: "#fff" }}
