@@ -1652,6 +1652,13 @@
   resolved "https://registry.yarnpkg.com/@mui/core-downloads-tracker/-/core-downloads-tracker-5.11.6.tgz#79a60c0d95a08859cccd62a8d9a5336ef477a840"
   integrity sha512-lbD3qdafBOf2dlqKhOcVRxaPAujX+9UlPC6v8iMugMeAXe0TCgU3QbGXY3zrJsu6ex64WYDpH4y1+WOOBmWMuA==
 
+"@mui/icons-material@^5.11.0":
+  version "5.11.0"
+  resolved "https://registry.yarnpkg.com/@mui/icons-material/-/icons-material-5.11.0.tgz#9ea6949278b2266d2683866069cd43009eaf6464"
+  integrity sha512-I2LaOKqO8a0xcLGtIozC9xoXjZAto5G5gh0FYUMAlbsIHNHIjn4Xrw9rvjY20vZonyiGrZNMAlAXYkY6JvhF6A==
+  dependencies:
+    "@babel/runtime" "^7.20.6"
+
 "@mui/material@^5.11.6":
   version "5.11.6"
   resolved "https://registry.yarnpkg.com/@mui/material/-/material-5.11.6.tgz#0055e7bdf5f89bb7f2a5cf0a3252dadfc9122c50"
@@ -2228,6 +2235,13 @@
   resolved "https://registry.yarnpkg.com/@types/range-parser/-/range-parser-1.2.4.tgz#cd667bcfdd025213aafb7ca5915a932590acdcdc"
   integrity sha512-EEhsLsD6UsDM1yFhAvy0Cjr6VwmpMWqFBCb9w07wVugF7w9nfajxLuVmngTIpgS6svCnm6Vaw+MZhoDCKnOfsw==
 
+"@types/react-anchor-link-smooth-scroll@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@types/react-anchor-link-smooth-scroll/-/react-anchor-link-smooth-scroll-1.0.2.tgz#50a4aaa7c2731f644f8a7b69225669fc29bc6746"
+  integrity sha512-ZemNS6WzQN8KA4w0sy5N86qJ55Ft7OnIDGH6QIHe0LL27xkZpNINMNZGR0DacIVPU66+JrbDqi1cKms9qhcPNQ==
+  dependencies:
+    "@types/react" "*"
+
 "@types/react-dom@^18.0.0", "@types/react-dom@^18.0.10":
   version "18.0.10"
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-18.0.10.tgz#3b66dec56aa0f16a6cc26da9e9ca96c35c0b4352"
@@ -2679,6 +2693,11 @@ ajv@^8.0.0, ajv@^8.6.0, ajv@^8.8.0:
     json-schema-traverse "^1.0.0"
     require-from-string "^2.0.2"
     uri-js "^4.2.2"
+
+animate.css@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/animate.css/-/animate.css-4.1.1.tgz#614ec5a81131d7e4dc362a58143f7406abd68075"
+  integrity sha512-+mRmCTv6SbCmtYJCN4faJMNFVNN5EuCTTprDTAo7YzIGji2KADmakjVA3+8mVDkZ2Bf09vayB35lSQIex2+QaQ==
 
 ansi-escapes@^4.2.1, ansi-escapes@^4.3.1:
   version "4.3.2"
@@ -6421,6 +6440,11 @@ lodash.sortby@^4.7.0:
   resolved "https://registry.yarnpkg.com/lodash.sortby/-/lodash.sortby-4.7.0.tgz#edd14c824e2cc9c1e0b0a1b42bb5210516a42438"
   integrity sha512-HDWXG8isMntAyRF5vZ7xKuEvOhT4AhlRt/3czTSjvGUxjYCBVRQY48ViDHyfYz9VIoBkW4TMGQNapx+l3RUwdA==
 
+lodash.throttle@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/lodash.throttle/-/lodash.throttle-4.1.1.tgz#c23e91b710242ac70c37f1e1cda9274cc39bf2f4"
+  integrity sha512-wIkUCfVKpVsWo3JSZlc+8MB5it+2AN5W8J7YVMST30UrvcQNZ1Okbj+rbVniijTWE6FGYy4XJq/rHkas8qJMLQ==
+
 lodash.uniq@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
@@ -7746,6 +7770,18 @@ raw-body@2.5.1:
     http-errors "2.0.0"
     iconv-lite "0.4.24"
     unpipe "1.0.0"
+
+react-anchor-link-smooth-scroll@^1.0.12:
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/react-anchor-link-smooth-scroll/-/react-anchor-link-smooth-scroll-1.0.12.tgz#5cd49c73e74be6d20b4c05a5e5c72d07ebbedac7"
+  integrity sha512-aaY+9X0yh8YnC0jBfoTKpsiCLdO/Y6pCltww+VB+NnTBPDOvnIdnp1AlazajsDitc1j+cVSQ+yNtaVeTIMQbxw==
+
+react-animation-on-scroll@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/react-animation-on-scroll/-/react-animation-on-scroll-5.1.0.tgz#4b69419d187bb5fdf2c4a01208d4a654ac8d883f"
+  integrity sha512-UBhlXUig+AGwDpRoqFC6qFh1mCIperwy1Pk7dJTb0XgpDzERF4f6fhoqFY2+on9Bf1n4OfUrRw4xsnKfQt6U7w==
+  dependencies:
+    lodash.throttle "^4.1.1"
 
 react-app-polyfill@^3.0.0:
   version "3.0.0"
