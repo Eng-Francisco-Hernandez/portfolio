@@ -12,6 +12,7 @@ import {
   IconButton,
   Typography,
 } from "@mui/material";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 interface ProjectsProps {
   id?: string;
@@ -28,59 +29,66 @@ export default function Projects(props: ProjectsProps) {
       </Grid>
       {projectItems.map((item, i) => {
         return (
-          <Grid
-            item
-            xs={12}
-            key={i}
-            sx={{ mb: 4, textAlign: i % 2 === 0 ? "left" : "right" }}
+          <AnimationOnScroll
+            animateIn={
+              i % 2 === 0 ? "animate__bounceInLeft" : "animate__bounceInRight"
+            }
+            animateOnce
           >
-            <Card className="project-card">
-              <CardHeader
-                sx={{ padding: "0" }}
-                subheader={
-                  <Typography component={"span"} variant="body2">
-                    {item.technologies.map((technology, j) => {
-                      return (
-                        <Chip
-                          sx={{ mt: 1, mr: 1, ml: 1, mb: 1 }}
-                          label={technology}
-                          size="small"
-                          key={j}
-                        ></Chip>
-                      );
-                    })}
+            <Grid
+              item
+              xs={12}
+              key={i}
+              sx={{ mb: 4, textAlign: i % 2 === 0 ? "left" : "right" }}
+            >
+              <Card className="project-card">
+                <CardHeader
+                  sx={{ padding: "0" }}
+                  subheader={
+                    <Typography component={"span"} variant="body2">
+                      {item.technologies.map((technology, j) => {
+                        return (
+                          <Chip
+                            sx={{ mt: 1, mr: 1, ml: 1, mb: 1 }}
+                            label={technology}
+                            size="small"
+                            key={j}
+                          ></Chip>
+                        );
+                      })}
+                    </Typography>
+                  }
+                  action={
+                    <div className="card-header-actions-container">
+                      <IconButton
+                        href={item.githubLink}
+                        target="_blank"
+                        color="primary"
+                      >
+                        <GitHubIcon />
+                      </IconButton>
+                      <IconButton
+                        href={item.externalLink}
+                        target="_blank"
+                        color="primary"
+                      >
+                        <OpenInNewIcon />
+                      </IconButton>
+                    </div>
+                  }
+                />
+                <CardMedia sx={{ height: 250 }} image={item.img} />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="div">
+                    {item.title}
                   </Typography>
-                }
-                action={
-                  <div className="card-header-actions-container">
-                    <IconButton
-                      href={item.githubLink}
-                      target="_blank"
-                      color="primary"
-                    >
-                      <GitHubIcon />
-                    </IconButton>
-                    <IconButton
-                      href={item.externalLink}
-                      target="_blank"
-                      color="primary"
-                    >
-                      <OpenInNewIcon />
-                    </IconButton>
-                  </div>
-                }
-              />
-              <CardMedia sx={{ height: 250 }} image={item.img} />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  {item.title}
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  {item.description}
-                </Typography>
-              </CardContent>
-            </Card>
-          </Grid>
+                  <Typography variant="body2" color="text.secondary">
+                    {item.description}
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+          </AnimationOnScroll>
         );
       })}
     </Grid>

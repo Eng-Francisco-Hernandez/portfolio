@@ -23,16 +23,16 @@ export default function Landing() {
         <Toolbar />
         <Container maxWidth="md">
           <Introduction id="Introduction" />
-          <AnimationOnScroll animateIn="animate__bounceIn" animateOnce>
+          <AnimationOnScroll animateIn="animate__bounceInLeft" animateOnce>
             <About id="About" />
           </AnimationOnScroll>
-          <AnimationOnScroll animateIn="animate__bounceIn" animateOnce>
+          <AnimationOnScroll animateIn="animate__bounceInRight" animateOnce>
             <Experience id="Experience" />
           </AnimationOnScroll>
-          <AnimationOnScroll animateIn="animate__bounceIn" animateOnce>
+          <AnimationOnScroll animateIn="animate__bounceInLeft" animateOnce>
             <Projects id="Work" />
           </AnimationOnScroll>
-          <AnimationOnScroll animateIn="animate__bounceIn" animateOnce>
+          <AnimationOnScroll animateIn="animate__bounceInRight" animateOnce>
             <Contact id="Contact" />
           </AnimationOnScroll>
           <Footer />
