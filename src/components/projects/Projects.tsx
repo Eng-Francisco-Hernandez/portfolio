@@ -1,6 +1,6 @@
 import GitHubIcon from "@mui/icons-material/GitHub";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
-import stockMarketToolsImg from "../../assets/images/projects/stock-market-tools.png";
+import { projectItems } from "../../util-constants";
 import "./projects.scss";
 import {
   Card,
@@ -12,31 +12,6 @@ import {
   IconButton,
   Typography,
 } from "@mui/material";
-
-interface ProjectItem {
-  technologies: string[];
-  githubLink: string;
-  externalLink: string;
-  img: string;
-  title: string;
-  description: string;
-}
-
-const projectItems: ProjectItem[] = [
-  {
-    technologies: ["TypeScript", "Sass", "React", "MUI", "Node.js"],
-    githubLink: "https://github.com/Eng-Francisco-Hernandez/stock-market-tools",
-    externalLink:
-      "https://eng-francisco-hernandez.github.io/stock-market-tools/",
-    img: stockMarketToolsImg,
-    title: "Stock market tools",
-    description: `An application built to show hot to use common features in a
-              trading application like getting historical data for symbols,
-              displaying graphs and search for stock market latest news. The
-              third parties used to implement the trading related features in
-              the project were Alpaca and Tiingo`,
-  },
-];
 
 interface ProjectsProps {
   id?: string;
@@ -53,7 +28,12 @@ export default function Projects(props: ProjectsProps) {
       </Grid>
       {projectItems.map((item, i) => {
         return (
-          <Grid item xs={12} key={i}>
+          <Grid
+            item
+            xs={12}
+            key={i}
+            sx={{ mb: 4, textAlign: i % 2 === 0 ? "left" : "right" }}
+          >
             <Card className="project-card">
               <CardHeader
                 sx={{ padding: "0" }}
