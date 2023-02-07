@@ -3,6 +3,10 @@ on:
   pull_request:
     branches:
       - "release/**"
+  push:
+    branches:
+      - "main"
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
