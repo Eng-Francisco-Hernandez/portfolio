@@ -9,3 +9,12 @@
     rgba(0, 212, 255, 1) 90%
   );
 }
+
+.drawer-social-network-items-container {
+  display: flex;
+  position: fixed;
+  bottom: 0px;
+  left: 20px;
+  justify-content: center;
+  margin: 20px;
+}

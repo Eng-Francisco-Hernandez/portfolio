@@ -1,8 +1,16 @@
-import { Grid, Typography, Button } from "@mui/material";
+import AnchorLink from "react-anchor-link-smooth-scroll";
+import { Button, Grid, Typography } from "@mui/material";
+const personalResume = require("../../assets/files/personal_resume.pdf");
+interface IntroductionProps {
+  id?: string;
+}
 
-export default function Introduction() {
+export default function Introduction(props: IntroductionProps) {
+  const { id } = props;
   return (
     <Grid
+      id={id}
+      className="animate__bounceIn"
       container
       spacing={2}
       direction="column"
@@ -28,10 +36,22 @@ export default function Introduction() {
         </Typography>
       </Grid>
       <Grid item xs={12}>
-        <Button sx={{ mr: 2 }} variant="contained">
+        <Button
+          href={personalResume}
+          target="_blank"
+          sx={{ mr: 2 }}
+          variant="contained"
+        >
           View resume
         </Button>
-        <Button variant="outlined">See my work</Button>
+        <AnchorLink href="#Work" offset={100} style={{textDecoration: "none"}}>
+          <Button
+            variant="outlined"
+            sx={{ color: "#fff", borderColor: "#fff" }}
+          >
+            See my work
+          </Button>
+        </AnchorLink>
       </Grid>
     </Grid>
   );

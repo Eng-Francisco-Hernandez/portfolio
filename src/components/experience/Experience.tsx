@@ -1,32 +1,9 @@
-import { Box, Grid, Tab, Tabs, Typography } from "@mui/material";
+import { Box, Chip, Grid, Tab, Tabs, Typography } from "@mui/material";
 import React from "react";
-
-interface TabItem {
-  title: string;
-  content: React.ReactNode | string;
-}
-
-const tabItems: TabItem[] = [
-  {
-    title: "ShareGRO",
-    content: "ShareGRO",
-  },
-  {
-    title: "Onramp",
-    content: "Onramp",
-  },
-  {
-    title: "RLI",
-    content: "RLI",
-  },
-  {
-    title: "Pragmation",
-    content: "Pragmation",
-  },
-];
+import { ExperienceItem, experienceItems } from "../../util-constants";
 
 interface TabPanelProps {
-  children?: React.ReactNode;
+  children: ExperienceItem;
   index: number;
   value: number;
 }
@@ -43,9 +20,48 @@ function TabPanel(props: TabPanelProps) {
       {...other}
     >
       {value === index && (
-        <Box sx={{ p: 3 }}>
-          <Typography>{children}</Typography>
-        </Box>
+        <Grid item sx={{ p: 1 }}>
+          <Typography variant="h6">
+            {`${children.title} @ ${
+              children.secondaryCompany
+                ? children.secondaryCompany
+                : children.company
+            }`}
+          </Typography>
+          <Typography variant="body2" sx={{ mb: 2 }}>
+            {children.date}
+          </Typography>
+          <Typography component={"span"} variant="body2" color="text.secondary">
+            {children.summary}
+            <br />
+            <ul>
+              {children.tasks.map((task, i) => {
+                return (
+                  <li className="mb-lg" key={i}>
+                    {task}
+                  </li>
+                );
+              })}
+            </ul>
+          </Typography>
+          <Typography
+            component={"span"}
+            variant="body2"
+            className="project-technology-list"
+          >
+            {children.technologies.map((technology, i) => {
+              return (
+                <Chip
+                  sx={{ mr: 1, mb: 1 }}
+                  label={technology}
+                  size="small"
+                  key={i}
+                  color="primary"
+                />
+              );
+            })}
+          </Typography>
+        </Grid>
       )}
     </div>
   );
@@ -58,7 +74,13 @@ function a11yProps(index: number) {
   };
 }
 
-export default function Experience() {
+interface ExperienceProps {
+  id?: string;
+}
+
+export default function Experience(props: ExperienceProps) {
+  const { id } = props;
+
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
@@ -66,7 +88,7 @@ export default function Experience() {
   };
 
   return (
-    <Grid container spacing={2} sx={{ mt: 15, mb: 8 }}>
+    <Grid id={id} container spacing={2} sx={{ mt: 15, mb: 8 }}>
       <Grid item xs={12}>
         <Typography variant="h5" sx={{ mb: 2 }}>
           Where I've worked
@@ -75,7 +97,6 @@ export default function Experience() {
           sx={{
             flexGrow: 1,
             display: "flex",
-            maxHeight: 300,
           }}
         >
           <Tabs
@@ -83,16 +104,16 @@ export default function Experience() {
             variant="scrollable"
             value={value}
             onChange={handleChange}
-            sx={{ borderRight: 1, borderColor: "divider" }}
+            sx={{ borderRight: 1, borderColor: "divider", minWidth: 120 }}
           >
-            {tabItems.map((tabItem, i) => {
-              return <Tab label={tabItem.title} {...a11yProps(i)} key={i} />;
+            {experienceItems.map((item, i) => {
+              return <Tab label={item.company} {...a11yProps(i)} key={i} />;
             })}
           </Tabs>
-          {tabItems.map((tabItem, i) => {
+          {experienceItems.map((item, i) => {
             return (
               <TabPanel value={value} index={i} key={i}>
-                {tabItem.content}
+                {item}
               </TabPanel>
             );
           })}

@@ -4,11 +4,18 @@ import { Grid, Typography } from "@mui/material";
 import { useState } from "react";
 import "./contact.scss";
 
-export default function Contact() {
+interface ContactProps {
+  id?: string;
+}
+
+export default function Contact(props: ContactProps) {
+  const { id } = props;
+
   const [personalEmail] = useState("fjch87@gmail.com");
 
   return (
     <Grid
+      id={id}
       container
       spacing={0}
       direction="column"
