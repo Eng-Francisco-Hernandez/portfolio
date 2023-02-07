@@ -2,10 +2,6 @@
 
 An application build to work as a personal portfolio
 
-The third party used to implement the email sending feature is:
-
-- [SendGrid](https://sendgrid.com/)
-
 ## Project Demo
 
 To see the project go to the next [DEMO LINK](https://eng-francisco-hernandez.github.io/portfolio/)
