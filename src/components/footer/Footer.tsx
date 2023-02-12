@@ -38,6 +38,7 @@ export default function Footer() {
         smooth
         style={{
           background: "none",
+          boxShadow: "none"
         }}
         component={
           <div className="mt-lg">
