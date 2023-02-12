@@ -1,17 +1,18 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.27960d11.css",
-    "main.js": "/portfolio/static/js/main.fd5cf3cd.js",
+    "main.js": "/portfolio/static/js/main.b95d0616.js",
+    "static/media/image-search-engine.png": "/portfolio/static/media/image-search-engine.fb0b2a41c0180d89615f.png",
     "static/media/Official.jpg": "/portfolio/static/media/Official.30eb66703ce2dbc5d747.jpg",
     "static/media/stock-market-tools.png": "/portfolio/static/media/stock-market-tools.b55cc5e7427cfc089aa7.png",
     "static/media/personal_resume.pdf": "/portfolio/static/media/personal_resume.e7fb315db1e7b7e2b07c.pdf",
     "static/media/online-compiler.png": "/portfolio/static/media/online-compiler.f402e786572b96529c8f.png",
     "index.html": "/portfolio/index.html",
     "main.27960d11.css.map": "/portfolio/static/css/main.27960d11.css.map",
-    "main.fd5cf3cd.js.map": "/portfolio/static/js/main.fd5cf3cd.js.map"
+    "main.b95d0616.js.map": "/portfolio/static/js/main.b95d0616.js.map"
   },
   "entrypoints": [
     "static/css/main.27960d11.css",
-    "static/js/main.fd5cf3cd.js"
+    "static/js/main.b95d0616.js"
   ]
 }
