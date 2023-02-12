@@ -1,6 +1,8 @@
-import { Grid, IconButton, Typography } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
+import ScrollToTop from "react-scroll-to-top";
+import { Fab, Grid, IconButton, Typography } from "@mui/material";
 export default function Footer() {
   return (
     <Grid
@@ -32,6 +34,19 @@ export default function Footer() {
           <OpenInNewIcon />
         </IconButton>
       </Grid>
+      <ScrollToTop
+        smooth
+        style={{
+          background: "none",
+        }}
+        component={
+          <div className="mt-lg">
+            <Fab size="small" color="primary">
+              <ArrowUpwardIcon />
+            </Fab>
+          </div>
+        }
+      />
     </Grid>
   );
 }
