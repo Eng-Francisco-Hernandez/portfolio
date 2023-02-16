@@ -1,10 +1,16 @@
 import stockMarketToolsImg from "../assets/images/projects/stock-market-tools.png";
 import onlineCompilerImg from "../assets/images/projects/online-compiler.png";
 import imageSearchEngine from "../assets/images/projects/image-search-engine.png";
+import finastraDesignSystemClone from "../assets/images/projects/finastra-design-system-clone.png";
+
+interface Technology {
+  name: string;
+  url?: string;
+}
 
 interface ProjectItem {
-  technologies: string[];
-  githubLink: string;
+  technologies: Technology[];
+  githubLink?: string;
   externalLink: string;
   img: string;
   title: string;
@@ -14,13 +20,13 @@ interface ProjectItem {
 export const projectItems: ProjectItem[] = [
   {
     technologies: [
-      "Node.js",
-      "TypeScript",
-      "Sass",
-      "React",
-      "MUI",
-      "Alpaca Markets API",
-      "Tiingo API",
+      { name: "Node.js" },
+      { name: "TypeScript" },
+      { name: "Sass" },
+      { name: "React" },
+      { name: "MUI" },
+      { name: "Alpaca Markets API", url: "https://alpaca.markets/docs/" },
+      { name: "Tiingo API", url: "https://api.tiingo.com/" },
     ],
     githubLink: "https://github.com/Eng-Francisco-Hernandez/stock-market-tools",
     externalLink:
@@ -35,13 +41,13 @@ export const projectItems: ProjectItem[] = [
   },
   {
     technologies: [
-      "Next.js",
-      "TypeScript",
-      "Sass",
-      "React",
-      "Semantic UI",
-      "JDoodle API",
-      "Ace editor",
+      { name: "Next.js" },
+      { name: "TypeScript" },
+      { name: "Sass" },
+      { name: "React" },
+      { name: "Semantic UI" },
+      { name: "JDoodle API", url: "https://www.jdoodle.com/" },
+      { name: "Ace editor", url: "https://ace.c9.io/" },
     ],
     githubLink: "https://github.com/Eng-Francisco-Hernandez/online-compiler",
     externalLink: "https://online-compiler-two.vercel.app/landing",
@@ -53,12 +59,12 @@ export const projectItems: ProjectItem[] = [
   },
   {
     technologies: [
-      "Node.js",
-      "TypeScript",
-      "Sass",
-      "React",
-      "Bootstrap",
-      "Unsplash API",
+      { name: "Node.js" },
+      { name: "TypeScript" },
+      { name: "Sass" },
+      { name: "React" },
+      { name: "Bootstrap" },
+      { name: "Unsplash API", url: "https://unsplash.com/" },
     ],
     githubLink:
       "https://github.com/Eng-Francisco-Hernandez/image-search-engine",
@@ -69,5 +75,29 @@ export const projectItems: ProjectItem[] = [
     description: `An application built to work as an image search engine to look up for
     pictures of some topic in particular using the Unsplash API as main source of data.
     Helpful to search public images quickly whenever it is needed.`,
+  },
+  {
+    technologies: [
+      { name: "Mendix" },
+      { name: "CSS" },
+      { name: "Sass" },
+      {
+        name: "Finastra Design System",
+        url: "https://design.fusionfabric.cloud/foundations",
+      },
+      {
+        name: "JSONPlaceholder API",
+        url: "https://jsonplaceholder.typicode.com/guide/",
+      },
+    ],
+    githubLink:
+      "https://github.com/Eng-Francisco-Hernandez/finastra-design-system-clone",
+    externalLink:
+      "https://designsystembuild-sandbox.mxapps.io/index.html?profile=Responsive",
+    img: finastraDesignSystemClone,
+    title: "Finastra Design System Clone",
+    description: `An application built to replicate a real design web system from scratch (Finastra).
+    To build the user interface every .scss file was created from zero following Sass best practices 
+    and following an atomic design.`,
   },
 ];

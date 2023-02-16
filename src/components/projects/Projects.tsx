@@ -30,6 +30,7 @@ export default function Projects(props: ProjectsProps) {
       {projectItems.map((item, i) => {
         return (
           <AnimationOnScroll
+            key={i}
             animateIn={
               i % 2 === 0 ? "animate__bounceInLeft" : "animate__bounceInRight"
             }
@@ -38,7 +39,6 @@ export default function Projects(props: ProjectsProps) {
             <Grid
               item
               xs={12}
-              key={i}
               sx={{ mb: 4, textAlign: i % 2 === 0 ? "left" : "right" }}
             >
               <Card className="project-card">
@@ -50,7 +50,13 @@ export default function Projects(props: ProjectsProps) {
                         return (
                           <Chip
                             sx={{ mt: 1, mr: 1, ml: 1, mb: 1 }}
-                            label={technology}
+                            variant={technology.url ? "outlined" : undefined}
+                            onClick={
+                              technology.url
+                                ? () => window.open(technology.url, "_blank")
+                                : undefined
+                            }
+                            label={technology.name}
                             size="small"
                             key={j}
                           ></Chip>
@@ -60,13 +66,15 @@ export default function Projects(props: ProjectsProps) {
                   }
                   action={
                     <div className="card-header-actions-container">
-                      <IconButton
-                        href={item.githubLink}
-                        target="_blank"
-                        color="primary"
-                      >
-                        <GitHubIcon />
-                      </IconButton>
+                      {item.githubLink && (
+                        <IconButton
+                          href={item.githubLink}
+                          target="_blank"
+                          color="primary"
+                        >
+                          <GitHubIcon />
+                        </IconButton>
+                      )}
                       <IconButton
                         href={item.externalLink}
                         target="_blank"
