@@ -29,7 +29,7 @@ export default function Introduction(props: IntroductionProps) {
         <Typography variant="h6">
           I'm a software engineer who specializes in building scalable,
           maintainable and fault resistant applications that create a great user
-          experience using modern and on-demand technologies.
+          experience using modern and in-demand technologies.
           <br />
           <br />I have a huge passion for programming, which I join with my
           technical knowledge to focus on deliver great software products.
