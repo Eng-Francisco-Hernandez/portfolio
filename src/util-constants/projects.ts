@@ -2,6 +2,7 @@ import stockMarketToolsImg from "../assets/images/projects/stock-market-tools.pn
 import onlineCompilerImg from "../assets/images/projects/online-compiler.png";
 import imageSearchEngine from "../assets/images/projects/image-search-engine.png";
 import finastraDesignSystemClone from "../assets/images/projects/finastra-design-system-clone.png";
+import computerScienceWebPlatform from "../assets/images/projects/computer-science-educative-web-platform.png";
 
 interface Technology {
   name: string;
@@ -18,6 +19,27 @@ interface ProjectItem {
 }
 
 export const projectItems: ProjectItem[] = [
+  {
+    technologies: [
+      { name: "Node.js" },
+      { name: "JavaScript" },
+      { name: "Express.js" },
+      { name: "MongoDB" },
+      { name: "EJS" },
+      { name: "jQuery" },
+      { name: "AJAX" },
+      { name: "Bootstrap" },
+      { name: "CSS" },
+    ],
+    externalLink:
+      "https://computer-science-educative-web-platform.onrender.com",
+    img: computerScienceWebPlatform,
+    title: "Computer Science Educative Web Platform",
+    description: `College level web system which is and has been used in
+    several Computer Science courses at Galileo University to manage different assignments,
+    announcements and to provide interactive material for learning programming languages to 6 different
+    classrooms with over 25 students each.`,
+  },
   {
     technologies: [
       { name: "Node.js" },
