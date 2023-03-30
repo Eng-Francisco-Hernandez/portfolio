@@ -3,6 +3,7 @@ import onlineCompilerImg from "../assets/images/projects/online-compiler.png";
 import imageSearchEngine from "../assets/images/projects/image-search-engine.png";
 import finastraDesignSystemClone from "../assets/images/projects/finastra-design-system-clone.png";
 import computerScienceWebPlatform from "../assets/images/projects/computer-science-educative-web-platform.png";
+import guatemalanMinistriesWiki from "../assets/images/projects/guatemalan-ministries-wiki.png";
 
 interface Technology {
   name: string;
@@ -121,5 +122,24 @@ export const projectItems: ProjectItem[] = [
     description: `An application built to replicate a real design web system from scratch (Finastra).
     To build the user interface every .scss file was created from zero following Sass best practices 
     and following an atomic design.`,
+  },
+  {
+    technologies: [
+      { name: "Next.js" },
+      { name: "TypeScript" },
+      { name: "Sass" },
+      { name: "React" },
+      { name: "Material UI" },
+      { name: "MongoDB" },
+      { name: "Puppeteer", url: "https://www.npmjs.com/package/puppeteer" },
+    ],
+    githubLink:
+      "https://github.com/Eng-Francisco-Hernandez/guatemalan-ministries-wiki",
+    externalLink: "https://guatemalan-ministries-wiki.vercel.app/home",
+    img: guatemalanMinistriesWiki,
+    title: "Guatemalan ministries wiki",
+    description: `Wiki that works as a centralized place to get public information about several Guatemalan 
+    ministries like the Ministry of Economy and the Ministry of Public Finances. It uses Puppeteer to perform
+    a web scrapping from the public websites of these ministries.`,
   },
 ];
