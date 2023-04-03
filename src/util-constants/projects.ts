@@ -4,6 +4,7 @@ import imageSearchEngine from "../assets/images/projects/image-search-engine.png
 import finastraDesignSystemClone from "../assets/images/projects/finastra-design-system-clone.png";
 import computerScienceWebPlatform from "../assets/images/projects/computer-science-educative-web-platform.png";
 import guatemalanMinistriesWiki from "../assets/images/projects/guatemalan-ministries-wiki.png";
+import blog from "../assets/images/projects/blog.png";
 
 interface Technology {
   name: string;
@@ -82,6 +83,25 @@ export const projectItems: ProjectItem[] = [
   },
   {
     technologies: [
+      { name: "Next.js" },
+      { name: "TypeScript" },
+      { name: "Sass" },
+      { name: "React" },
+      { name: "Bootstrap" },
+      { name: "MongoDB" },
+      { name: "MongoDB Atlas" },
+      { name: "CKEditor", url: "https://ckeditor.com/" },
+    ],
+    githubLink: "https://github.com/Eng-Francisco-Hernandez/blog",
+    externalLink: "https://blog-eng-francisco-hernandez.vercel.app/landing",
+    img: blog,
+    title: "Blog",
+    description: `This was a personal project built in order to have a blog using several modern web development 
+    technologies. It works with CKEditor to add the content of the articles and it sanitizes the HTML to make
+    the storing of HTML into the database safe.`,
+  },
+  {
+    technologies: [
       { name: "Node.js" },
       { name: "TypeScript" },
       { name: "Sass" },
@@ -131,6 +151,7 @@ export const projectItems: ProjectItem[] = [
       { name: "React" },
       { name: "Material UI" },
       { name: "MongoDB" },
+      { name: "MongoDB Atlas" },
       { name: "Puppeteer", url: "https://www.npmjs.com/package/puppeteer" },
     ],
     githubLink:
