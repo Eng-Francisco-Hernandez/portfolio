@@ -5,6 +5,7 @@ import finastraDesignSystemClone from "../assets/images/projects/finastra-design
 import computerScienceWebPlatform from "../assets/images/projects/computer-science-educative-web-platform.png";
 import guatemalanMinistriesWiki from "../assets/images/projects/guatemalan-ministries-wiki.png";
 import blog from "../assets/images/projects/blog.png";
+import postmanClone from "../assets/images/projects/postman-clone.png";
 
 interface Technology {
   name: string;
@@ -80,6 +81,23 @@ export const projectItems: ProjectItem[] = [
     description: `Online compiler that supports several programming languages and 
     has several editor themes. Helpful to quickly run snippets and test code easily 
     while working on the development of bigger projects.`,
+  },
+  {
+    technologies: [
+      { name: "Next.js" },
+      { name: "TypeScript" },
+      { name: "Sass" },
+      { name: "React" },
+      { name: "Bootstrap" },
+      { name: "Ace editor", url: "https://ace.c9.io/" },
+    ],
+    githubLink: "https://github.com/Eng-Francisco-Hernandez/postman-clone",
+    externalLink: "https://postman-clone-eng-francisco-hernandez.vercel.app/",
+    img: postmanClone,
+    title: "Postman clone",
+    description: `Application that allows you to send requests to any API. It counts with 
+    GET, POST, PUT and DELETE methods. It also supports headers and parameters sending.
+    It is very helpful to test APIs and send requests easily using a web application.`,
   },
   {
     technologies: [
