@@ -6,6 +6,7 @@ import computerScienceWebPlatform from "../assets/images/projects/computer-scien
 import guatemalanMinistriesWiki from "../assets/images/projects/guatemalan-ministries-wiki.png";
 import blog from "../assets/images/projects/blog.png";
 import postmanClone from "../assets/images/projects/postman-clone.png";
+import triviaQuiz from "../assets/images/projects/trivia-quiz.png";
 
 interface Technology {
   name: string;
@@ -22,27 +23,6 @@ interface ProjectItem {
 }
 
 export const projectItems: ProjectItem[] = [
-  {
-    technologies: [
-      { name: "Node.js" },
-      { name: "JavaScript" },
-      { name: "Express.js" },
-      { name: "MongoDB" },
-      { name: "EJS" },
-      { name: "jQuery" },
-      { name: "AJAX" },
-      { name: "Bootstrap" },
-      { name: "CSS" },
-    ],
-    externalLink:
-      "https://computer-science-educative-web-platform.onrender.com",
-    img: computerScienceWebPlatform,
-    title: "Computer Science Educative Web Platform",
-    description: `College level web system which is and has been used in
-    several Computer Science courses at Galileo University to manage different assignments,
-    announcements and to provide interactive material for learning programming languages to 6 different
-    classrooms with over 25 students each.`,
-  },
   {
     technologies: [
       { name: "Node.js" },
@@ -120,6 +100,22 @@ export const projectItems: ProjectItem[] = [
   },
   {
     technologies: [
+      { name: "Next.js" },
+      { name: "TypeScript" },
+      { name: "Sass" },
+      { name: "React" },
+      { name: "Material UI" },
+    ],
+    githubLink:
+      "https://github.com/Eng-Francisco-Hernandez/trivia-quiz",
+    externalLink: "https://trivia-quiz-iota.vercel.app/",
+    img: triviaQuiz,
+    title: "Trivia quiz",
+    description: `Application that allows you to complete a trivia quiz about some subject in particular. 
+    You can select the amount of questions, the difficulty and the category of the quiz.`,
+  },
+  {
+    technologies: [
       { name: "Node.js" },
       { name: "TypeScript" },
       { name: "Sass" },
@@ -136,6 +132,27 @@ export const projectItems: ProjectItem[] = [
     description: `An application built to work as an image search engine to look up for
     pictures of some topic in particular using the Unsplash API as main source of data.
     Helpful to search public images quickly whenever it is needed.`,
+  },
+  {
+    technologies: [
+      { name: "Node.js" },
+      { name: "JavaScript" },
+      { name: "Express.js" },
+      { name: "MongoDB" },
+      { name: "EJS" },
+      { name: "jQuery" },
+      { name: "AJAX" },
+      { name: "Bootstrap" },
+      { name: "CSS" },
+    ],
+    externalLink:
+      "https://computer-science-educative-web-platform.onrender.com",
+    img: computerScienceWebPlatform,
+    title: "Computer Science Educative Web Platform",
+    description: `College level web system which is and has been used in
+    several Computer Science courses at Galileo University to manage different assignments,
+    announcements and to provide interactive material for learning programming languages to 6 different
+    classrooms with over 25 students each.`,
   },
   {
     technologies: [
