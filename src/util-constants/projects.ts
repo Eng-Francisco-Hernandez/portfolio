@@ -108,7 +108,7 @@ export const projectItems: ProjectItem[] = [
     ],
     githubLink:
       "https://github.com/Eng-Francisco-Hernandez/trivia-quiz",
-    externalLink: "https://trivia-quiz-iota.vercel.app/",
+    externalLink: "https://trivia-quiz-eng-francisco-hernandez.vercel.app/",
     img: triviaQuiz,
     title: "Trivia quiz",
     description: `Application that allows you to complete a trivia quiz about some subject in particular. 
