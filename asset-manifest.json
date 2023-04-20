@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.564cfcf8.css",
-    "main.js": "/portfolio/static/js/main.89157103.js",
+    "main.js": "/portfolio/static/js/main.2b345987.js",
     "static/media/image-search-engine.png": "/portfolio/static/media/image-search-engine.fb0b2a41c0180d89615f.png",
     "static/media/Official.jpg": "/portfolio/static/media/Official.30eb66703ce2dbc5d747.jpg",
     "static/media/guatemalan-ministries-wiki.png": "/portfolio/static/media/guatemalan-ministries-wiki.588434391df6d368a374.png",
@@ -9,15 +9,16 @@
     "static/media/personal_resume.pdf": "/portfolio/static/media/personal_resume.64ccfe03be6d81463157.pdf",
     "static/media/stock-market-tools.png": "/portfolio/static/media/stock-market-tools.b55cc5e7427cfc089aa7.png",
     "static/media/computer-science-educative-web-platform.png": "/portfolio/static/media/computer-science-educative-web-platform.ba8e1273f99f6cf98381.png",
+    "static/media/trivia-quiz.png": "/portfolio/static/media/trivia-quiz.f2deb8cb8699993bba60.png",
     "static/media/finastra-design-system-clone.png": "/portfolio/static/media/finastra-design-system-clone.b29b07d24a741fd7eab9.png",
     "static/media/postman-clone.png": "/portfolio/static/media/postman-clone.2fa5ddf11e64a4f4133b.png",
     "static/media/online-compiler.png": "/portfolio/static/media/online-compiler.f402e786572b96529c8f.png",
     "index.html": "/portfolio/index.html",
     "main.564cfcf8.css.map": "/portfolio/static/css/main.564cfcf8.css.map",
-    "main.89157103.js.map": "/portfolio/static/js/main.89157103.js.map"
+    "main.2b345987.js.map": "/portfolio/static/js/main.2b345987.js.map"
   },
   "entrypoints": [
     "static/css/main.564cfcf8.css",
-    "static/js/main.89157103.js"
+    "static/js/main.2b345987.js"
   ]
 }
