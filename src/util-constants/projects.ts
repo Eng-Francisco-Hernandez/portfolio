@@ -7,6 +7,7 @@ import guatemalanMinistriesWiki from "../assets/images/projects/guatemalan-minis
 import blog from "../assets/images/projects/blog.png";
 import postmanClone from "../assets/images/projects/postman-clone.png";
 import triviaQuiz from "../assets/images/projects/trivia-quiz.png";
+import imageRecognition from "../assets/images/projects/image-recognition.png";
 
 interface Technology {
   name: string;
@@ -106,13 +107,30 @@ export const projectItems: ProjectItem[] = [
       { name: "React" },
       { name: "Material UI" },
     ],
-    githubLink:
-      "https://github.com/Eng-Francisco-Hernandez/trivia-quiz",
+    githubLink: "https://github.com/Eng-Francisco-Hernandez/trivia-quiz",
     externalLink: "https://trivia-quiz-eng-francisco-hernandez.vercel.app/",
     img: triviaQuiz,
     title: "Trivia quiz",
     description: `Application that allows you to complete a trivia quiz about some subject in particular. 
     You can select the amount of questions, the difficulty and the category of the quiz.`,
+  },
+
+  {
+    technologies: [
+      { name: "Next.js" },
+      { name: "TypeScript" },
+      { name: "Sass" },
+      { name: "React" },
+      { name: "Ionic" },
+      { name: "Capacitor" },
+      { name: "Imagga", url: "https://imagga.com/" },
+    ],
+    githubLink: "https://github.com/Eng-Francisco-Hernandez/image-recognition",
+    externalLink: "https://image-recognition-eight.vercel.app/",
+    img: imageRecognition,
+    title: "Image recognition",
+    description: `Cross-platform application that allows you to upload an image to recognize what is in it. 
+    It uses an external service as a solution for image tagging & categorization, visual search and content moderation.`,
   },
   {
     technologies: [
