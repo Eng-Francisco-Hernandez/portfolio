@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.564cfcf8.css",
-    "main.js": "/portfolio/static/js/main.013d42ee.js",
+    "main.js": "/portfolio/static/js/main.29d986ae.js",
     "static/media/image-search-engine.png": "/portfolio/static/media/image-search-engine.fb0b2a41c0180d89615f.png",
     "static/media/Official.jpg": "/portfolio/static/media/Official.30eb66703ce2dbc5d747.jpg",
     "static/media/guatemalan-ministries-wiki.png": "/portfolio/static/media/guatemalan-ministries-wiki.588434391df6d368a374.png",
+    "static/media/image-recognition.png": "/portfolio/static/media/image-recognition.f00faf8d2d5978dad9d0.png",
     "static/media/blog.png": "/portfolio/static/media/blog.de4ef9fd4c5f6ea39ec3.png",
     "static/media/personal_resume.pdf": "/portfolio/static/media/personal_resume.64ccfe03be6d81463157.pdf",
     "static/media/stock-market-tools.png": "/portfolio/static/media/stock-market-tools.b55cc5e7427cfc089aa7.png",
@@ -15,10 +16,10 @@
     "static/media/online-compiler.png": "/portfolio/static/media/online-compiler.f402e786572b96529c8f.png",
     "index.html": "/portfolio/index.html",
     "main.564cfcf8.css.map": "/portfolio/static/css/main.564cfcf8.css.map",
-    "main.013d42ee.js.map": "/portfolio/static/js/main.013d42ee.js.map"
+    "main.29d986ae.js.map": "/portfolio/static/js/main.29d986ae.js.map"
   },
   "entrypoints": [
     "static/css/main.564cfcf8.css",
-    "static/js/main.013d42ee.js"
+    "static/js/main.29d986ae.js"
   ]
 }
