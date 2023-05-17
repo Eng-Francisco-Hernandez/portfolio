@@ -85,7 +85,12 @@ export default function Projects(props: ProjectsProps) {
                     </div>
                   }
                 />
-                <CardMedia sx={{ height: 250 }} image={item.img} />
+                <CardMedia
+                  sx={{ height: 250 }}
+                  image={item.img}
+                  onClick={() => window.open(item.externalLink, "_blank")}
+                  className='project-image-redirect'
+                />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
                     {item.title}

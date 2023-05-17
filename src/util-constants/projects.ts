@@ -8,6 +8,7 @@ import blog from "../assets/images/projects/blog.png";
 import postmanClone from "../assets/images/projects/postman-clone.png";
 import triviaQuiz from "../assets/images/projects/trivia-quiz.png";
 import imageRecognition from "../assets/images/projects/image-recognition.png";
+import ticTacToe from "../assets/images/projects/tic-tac-toe.png";
 
 interface Technology {
   name: string;
@@ -215,5 +216,20 @@ export const projectItems: ProjectItem[] = [
     description: `Wiki that works as a centralized place to get public information about several Guatemalan 
     ministries like the Ministry of Economy and the Ministry of Public Finances. It uses Puppeteer to perform
     a web scrapping from the public websites of these ministries.`,
+  },
+  {
+    technologies: [
+      { name: "Node.js" },
+      { name: "TypeScript" },
+      { name: "Sass" },
+      { name: "React" },
+    ],
+    githubLink: "https://github.com/Eng-Francisco-Hernandez/tic-tac-toe",
+    externalLink: "https://eng-francisco-hernandez.github.io/tic-tac-toe/",
+    img: ticTacToe,
+    title: "NxN Tic Tac Toe",
+    description: `An application built to replicate the classic game Tic Tac Toe. The board has a size of NxN. 
+    The user can enter the value of N to create a new game with the selected size. By default the starting player will
+    have the X symbol and the game can be won by one symbol (X | O) or it can result in a tie.`,
   },
 ];
