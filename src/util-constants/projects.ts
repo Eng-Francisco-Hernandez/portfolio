@@ -9,6 +9,7 @@ import postmanClone from "../assets/images/projects/postman-clone.png";
 import triviaQuiz from "../assets/images/projects/trivia-quiz.png";
 import imageRecognition from "../assets/images/projects/image-recognition.png";
 import ticTacToe from "../assets/images/projects/tic-tac-toe.png";
+import dailyNews from "../assets/images/projects/daily-news.png";
 
 interface Technology {
   name: string;
@@ -87,18 +88,16 @@ export const projectItems: ProjectItem[] = [
       { name: "TypeScript" },
       { name: "Sass" },
       { name: "React" },
-      { name: "Bootstrap" },
-      { name: "MongoDB" },
-      { name: "MongoDB Atlas" },
-      { name: "CKEditor", url: "https://ckeditor.com/" },
+      { name: "MUI" },
+      { name: "News API", url: "https://newsapi.org/" },
     ],
-    githubLink: "https://github.com/Eng-Francisco-Hernandez/blog",
-    externalLink: "https://blog-eng-francisco-hernandez.vercel.app/landing",
-    img: blog,
-    title: "Blog",
-    description: `This was a personal project built in order to have a blog using several modern web development 
-    technologies. It works with CKEditor to add the content of the articles and it sanitizes the HTML to make
-    the storing of HTML into the database safe.`,
+    githubLink: "https://github.com/Eng-Francisco-Hernandez/daily-news",
+    externalLink: "https://daily-news-xi.vercel.app/",
+    img: dailyNews,
+    title: "Daily news",
+    description: `Application that allows you to locate articles and breaking news headlines from news sources 
+    and blogs across the web. These are articles from the USA and you can select topics of up to 7 categories.
+    You can select and read individual articles from the general list for more details.`,
   },
   {
     technologies: [
@@ -115,7 +114,6 @@ export const projectItems: ProjectItem[] = [
     description: `Application that allows you to complete a trivia quiz about some subject in particular. 
     You can select the amount of questions, the difficulty and the category of the quiz.`,
   },
-
   {
     technologies: [
       { name: "Next.js" },
@@ -132,6 +130,25 @@ export const projectItems: ProjectItem[] = [
     title: "Image recognition",
     description: `Cross-platform application that allows you to upload an image to recognize what is in it. 
     It uses an external service as a solution for image tagging & categorization, visual search and content moderation.`,
+  },
+  {
+    technologies: [
+      { name: "Next.js" },
+      { name: "TypeScript" },
+      { name: "Sass" },
+      { name: "React" },
+      { name: "Bootstrap" },
+      { name: "MongoDB" },
+      { name: "MongoDB Atlas" },
+      { name: "CKEditor", url: "https://ckeditor.com/" },
+    ],
+    githubLink: "https://github.com/Eng-Francisco-Hernandez/blog",
+    externalLink: "https://blog-eng-francisco-hernandez.vercel.app/landing",
+    img: blog,
+    title: "Blog",
+    description: `This was a personal project built in order to have a blog using several modern web development 
+    technologies. It works with CKEditor to add the content of the articles and it sanitizes the HTML to make
+    the storing of HTML into the database safe.`,
   },
   {
     technologies: [
