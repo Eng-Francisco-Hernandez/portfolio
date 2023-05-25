@@ -88,6 +88,34 @@ export const experienceItems: ExperienceItem[] = [
     technologies: ["Java", "Sass", "Mendix", "Swagger", "Figma"],
   },
   {
+    company: "Galileo University",
+    title: "Software engineer and Teaching Assistant",
+    date: "01/2019 - 11/2022",
+    summary: `Worked on the development of a web platform for assignments management and to support the learning process of the students.
+              Teaching assistant in several Computer Science courses. My task consisted in supporting students in laboratories 
+              building algorithms when teaching them important basic concepts using programming languages.`,
+    tasks: [
+      "Developed a college level web system used by 200+ users for the administration of class assignments in Computer Science courses using Node.js, Express.js, EJS, Google Compute Engine, MongoDB Atlas and Bootstrap among others",
+      "Developed lessons for and taught a class of over 25 students",
+      "Developed and carry out of laboratory activities for 4 different Computer Science courses",
+      "Implemented teaching guides independently for classrooms of over 25 students",
+    ],
+    technologies: [
+      "Front-End Development",
+      "Bootstrap",
+      "HTML",
+      "Computer Science",
+      "Algorithms",
+      "Data Structures",
+      "University Teaching",
+      "Java",
+      "JavaScript Libraries",
+      "Software Development",
+      "Express.js",
+      "MongoDB",
+    ],
+  },
+  {
     company: "Pragmation",
     title: "Freelance Software engineer",
     date: "07/2021 - 08/2021",

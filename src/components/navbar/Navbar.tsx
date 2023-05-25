@@ -1,9 +1,10 @@
-import AnchorLink from "react-anchor-link-smooth-scroll";
-import Box from "@mui/material/Box";
-import MenuIcon from "@mui/icons-material/Menu";
-import React from "react";
-import { socialNetworkItems } from "../../util-constants";
-import "./navbar.scss";
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+import Box from '@mui/material/Box';
+import MenuIcon from '@mui/icons-material/Menu';
+import personalLogo from '../../assets/images/logo128.png';
+import React from 'react';
+import { socialNetworkItems } from '../../util-constants';
+import './navbar.scss';
 import {
   AppBar,
   Button,
@@ -116,16 +117,22 @@ export default function Navbar() {
           >
             <MenuIcon />
           </IconButton>
+          <img height={45} src={personalLogo} />
           <Typography
             variant="h6"
             component="div"
             sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
           >
-            Francisco Hernández
+            {/* OPTIONAL TEXT TO SUPPORT LOGO */}
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item, i) => (
-              <AnchorLink href={item.href} key={i} offset={100} style={{textDecoration: "none"}}>
+              <AnchorLink
+                href={item.href}
+                key={i}
+                offset={100}
+                style={{ textDecoration: "none" }}
+              >
                 <Button sx={{ color: "#fff" }}>{item.title}</Button>
               </AnchorLink>
             ))}
