@@ -3,10 +3,10 @@ on:
   pull_request:
     branches:
       - "release/**"
-      - "feature/**"
   push:
     branches:
       - "main"
+      - "feature/**"
 
 jobs:
   deploy:
