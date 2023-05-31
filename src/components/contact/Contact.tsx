@@ -3,6 +3,7 @@ import EmailIcon from "@mui/icons-material/Email";
 import { Grid, Typography } from "@mui/material";
 import { useState } from "react";
 import "./contact.scss";
+import { colors } from "../../util-constants";
 
 interface ContactProps {
   id?: string;

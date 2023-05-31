@@ -1,10 +1,10 @@
-import AnchorLink from 'react-anchor-link-smooth-scroll';
-import Box from '@mui/material/Box';
-import MenuIcon from '@mui/icons-material/Menu';
-import personalLogo from '../../assets/images/logo128.png';
-import React from 'react';
-import { socialNetworkItems } from '../../util-constants';
-import './navbar.scss';
+import AnchorLink from "react-anchor-link-smooth-scroll";
+import Box from "@mui/material/Box";
+import MenuIcon from "@mui/icons-material/Menu";
+import personalLogo from "../../assets/images/logo128.png";
+import React from "react";
+import { colors, socialNetworkItems } from "../../util-constants";
+import "./navbar.scss";
 import {
   AppBar,
   Button,
@@ -140,7 +140,11 @@ export default function Navbar() {
               href={personalResume}
               variant="outlined"
               target="_blank"
-              sx={{ color: "#fff", borderColor: "#fff", ml: 2 }}
+              sx={{
+                color: colors.TEXT_TERTIARY,
+                borderColor: colors.TEXT_TERTIARY,
+                ml: 2,
+              }}
             >
               Resume
             </Button>

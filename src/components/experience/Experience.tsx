@@ -1,6 +1,6 @@
 import { Box, Chip, Grid, Tab, Tabs, Typography } from "@mui/material";
 import React from "react";
-import { ExperienceItem, experienceItems } from "../../util-constants";
+import { ExperienceItem, colors, experienceItems } from "../../util-constants";
 
 interface TabPanelProps {
   children: ExperienceItem;
@@ -22,11 +22,17 @@ function TabPanel(props: TabPanelProps) {
       {value === index && (
         <Grid item sx={{ p: 1 }}>
           <Typography variant="h6">
-            {`${children.title} @ ${
-              children.secondaryCompany
+            {children.title}{" "}
+            <Typography
+              component={"span"}
+              variant="h6"
+              color={colors.TEXT_TERTIARY}
+            >
+              @{" "}
+              {children.secondaryCompany
                 ? children.secondaryCompany
-                : children.company
-            }`}
+                : children.company}
+            </Typography>
           </Typography>
           <Typography variant="body2" sx={{ mb: 2 }}>
             {children.date}
@@ -88,9 +94,9 @@ export default function Experience(props: ExperienceProps) {
   };
 
   return (
-    <Grid id={id} container spacing={2} sx={{ mt: 15, mb: 8 }}>
+    <Grid id={id} container spacing={2} sx={{ mt: 10, mb: 8 }}>
       <Grid item xs={12}>
-        <Typography variant="h5" sx={{ mb: 2 }}>
+        <Typography color={colors.TEXT_TERTIARY} variant="h5" sx={{ mb: 2 }}>
           Where I've worked
         </Typography>
         <Box
@@ -107,7 +113,17 @@ export default function Experience(props: ExperienceProps) {
             sx={{ borderRight: 1, borderColor: "divider", minWidth: 120 }}
           >
             {experienceItems.map((item, i) => {
-              return <Tab label={item.company} {...a11yProps(i)} key={i} />;
+              return (
+                <Tab
+                  style={{
+                    color: colors.TEXT_TERTIARY,
+                    fontWeight: "bold",
+                  }}
+                  label={item.company}
+                  {...a11yProps(i)}
+                  key={i}
+                />
+              );
             })}
           </Tabs>
           {experienceItems.map((item, i) => {

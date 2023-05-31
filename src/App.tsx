@@ -2,23 +2,24 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { Landing } from './pages';
 import './theme/main.scss';
 import 'animate.css/animate.min.css';
+import { colors } from './util-constants';
 
 const customTheme = createTheme({
   palette: {
     // mode: "dark",
     primary: {
-      main: "#000a41",
-      light: "#4e73fe",
-      dark: "#01114c",
+      main: colors.PRIMARY,
+      light: colors.PRIMARY_LIGHT,
+      dark: colors.PRIMARY_DARK,
     },
     text: {
-      primary: "#f0f3ff",
-      secondary: "#e1e7ff",
-      disabled: "#f0f0f0",
+      primary: colors.TEXT_PRIMARY,
+      secondary: colors.TEXT_SECONDARY,
+      disabled: colors.TEXT_DISABLED,
     },
     action: {
-      disabledBackground: "#b8c7fe",
-      disabled: "#f5f7ff",
+      disabledBackground: colors.DISABLED,
+      disabled: colors.BACKGROUND_DISABLED,
     },
   },
   typography: {

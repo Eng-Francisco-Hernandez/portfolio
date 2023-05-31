@@ -41,10 +41,18 @@ export const experienceItems: ExperienceItem[] = [
     summary:
       "ShareGRO is a tailored wealth management platform built on simple yet powerful peer-to-peer sharing.",
     tasks: [
-      "Development of customer facing and administrator cross-platform mobile applications using HTML, Sass, TypeScript, React and the Ionic framework.",
-      "Implemented GraphQL API in Node.js project using Express.js and express-graphql to serve queries and mutations for web applications connected using using Apollo Client.",
-      "Built endpoints in GraphQL API and implemented new features to extend back-end functionality in Python based project using Graphene-Python library and Starlette framework.",
-      "Implemented third party integrations for several services like SMS verification, email sending, broker dealer services and financial services in Node.js and Python based projects.",
+      `Worked on the development of a customer facing and administrator web applications using HTML, CSS/SASS, 
+      TypeScript (React.js) and the Ionic framework.`,
+      `Implemented GraphQL API in a Node.js project using Express.js and express-graphql to serve queries and mutations
+      for React.js applications and connected both using Apollo Client.`,
+      `Built endpoints in GraphQL API and implemented new features to extend back-end functionality in Python based project
+      using Graphene-Python library and the Starlette framework.`,
+      `Implemented third party integrations for several services like SMS verification with Twilio, email sending with SendGrid,
+      broker dealer services and financial services in Node.js and Python based projects.`,
+      `Built Node.js project and used the Serverless framework to declare AWS Lambda functions using TypeScript, with the purpose of having 
+      different cron-jobs that performed certain logic related with the user's information.`,
+      `Created the necessary infrastructure to host static builds of React.js applications and a containerized Express.js application using 
+      AWS S3, CloudFront, Route53, ECR and ECS.`,
     ],
     technologies: [
       "TypeScript",
@@ -57,6 +65,14 @@ export const experienceItems: ExperienceItem[] = [
       "MongoDB",
       "PostgreSQL",
       "Storybook",
+      "Serverless Framework",
+      "EC2",
+      "ECS",
+      "ECR",
+      "S3",
+      "CloudFront",
+      "Route53",
+      "Lambda Functions",
     ],
   },
   {
@@ -67,9 +83,9 @@ export const experienceItems: ExperienceItem[] = [
     summary:
       "Onramp Invest supports crypto wealth management, providing financial advisors with seamless access to digital assets and integrated CRM tools.",
     tasks: [
-      "Support on development of digital asset wealth platform.",
-      "Gave support and developed new features to extend user experience functionality in existing front-end projects.",
-      "Built new endpoints in existing REST API for data manipulation.",
+      `Gave support and developed new features to extend user experience functionality in existing front-end projects 
+      using JavaScript, Vue.js and CSS.`,
+      `Built new endpoints in existing REST API for data manipulation using FastAPI in Python based project.`,
     ],
     technologies: ["JavaScript", "Node.js", "Vue.js", "Python", "FastAPI"],
   },
@@ -81,9 +97,10 @@ export const experienceItems: ExperienceItem[] = [
     summary:
       "Mendix is the fastest & easiest low-code platform used by businesses to develop mobile & web apps at scale. RLI is a U.S.-based specialty insurer that serves niche property, casualty and surety markets.",
     tasks: [
-      "Development of quotation's web system for RLI insurance company.",
-      "Created necessary stylesheets to replicate website with given designs from Figma.",
-      "Developed all the required API integrations in the web system by following given Swagger REST API documentation.",
+      `Created necessary stylesheets using CSS/Sass to replicate quotation's web system for insurance company using the 
+      corresponding brand guidelines coming from Figma designs.`,
+      `Developed all the required API integrations in quotation's web system by following the given Swagger REST API 
+      documentation using the Mendix technology.`,
     ],
     technologies: ["Java", "Sass", "Mendix", "Swagger", "Figma"],
   },

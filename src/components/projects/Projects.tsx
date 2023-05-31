@@ -1,6 +1,6 @@
 import GitHubIcon from "@mui/icons-material/GitHub";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
-import { projectItems } from "../../util-constants";
+import { colors, projectItems } from "../../util-constants";
 import "./projects.scss";
 import {
   Card,
@@ -23,7 +23,7 @@ export default function Projects(props: ProjectsProps) {
   return (
     <Grid id={id} container spacing={2} sx={{ mt: 15, mb: 8 }}>
       <Grid item xs={12}>
-        <Typography variant="h5" sx={{ mb: 2 }}>
+        <Typography color={colors.TEXT_TERTIARY} variant="h5" sx={{ mb: 2 }}>
           My projects
         </Typography>
       </Grid>
@@ -92,7 +92,7 @@ export default function Projects(props: ProjectsProps) {
                   className='project-image-redirect'
                 />
                 <CardContent>
-                  <Typography gutterBottom variant="h5" component="div">
+                  <Typography color={colors.TEXT_TERTIARY} gutterBottom variant="h5" component="div">
                     {item.title}
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
