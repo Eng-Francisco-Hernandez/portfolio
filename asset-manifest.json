@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.10b57f7c.css",
-    "main.js": "/portfolio/static/js/main.f0e10e33.js",
+    "main.css": "/portfolio/static/css/main.98ce332c.css",
+    "main.js": "/portfolio/static/js/main.d495e230.js",
     "static/media/image-search-engine.png": "/portfolio/static/media/image-search-engine.fb0b2a41c0180d89615f.png",
     "static/media/daily-news.png": "/portfolio/static/media/daily-news.cab39cfda7aab009c644.png",
     "static/media/Official.jpg": "/portfolio/static/media/Official.30eb66703ce2dbc5d747.jpg",
     "static/media/guatemalan-ministries-wiki.png": "/portfolio/static/media/guatemalan-ministries-wiki.588434391df6d368a374.png",
     "static/media/image-recognition.png": "/portfolio/static/media/image-recognition.f00faf8d2d5978dad9d0.png",
     "static/media/blog.png": "/portfolio/static/media/blog.de4ef9fd4c5f6ea39ec3.png",
-    "static/media/personal_resume.pdf": "/portfolio/static/media/personal_resume.64ccfe03be6d81463157.pdf",
+    "static/media/personal_resume.pdf": "/portfolio/static/media/personal_resume.a62ba3bfa2a9799acc30.pdf",
     "static/media/stock-market-tools.png": "/portfolio/static/media/stock-market-tools.b55cc5e7427cfc089aa7.png",
     "static/media/computer-science-educative-web-platform.png": "/portfolio/static/media/computer-science-educative-web-platform.ba8e1273f99f6cf98381.png",
     "static/media/tic-tac-toe.png": "/portfolio/static/media/tic-tac-toe.08713fa8a0f81d1cfb04.png",
@@ -18,11 +18,11 @@
     "static/media/postman-clone.png": "/portfolio/static/media/postman-clone.2fa5ddf11e64a4f4133b.png",
     "static/media/online-compiler.png": "/portfolio/static/media/online-compiler.f402e786572b96529c8f.png",
     "index.html": "/portfolio/index.html",
-    "main.10b57f7c.css.map": "/portfolio/static/css/main.10b57f7c.css.map",
-    "main.f0e10e33.js.map": "/portfolio/static/js/main.f0e10e33.js.map"
+    "main.98ce332c.css.map": "/portfolio/static/css/main.98ce332c.css.map",
+    "main.d495e230.js.map": "/portfolio/static/js/main.d495e230.js.map"
   },
   "entrypoints": [
-    "static/css/main.10b57f7c.css",
-    "static/js/main.f0e10e33.js"
+    "static/css/main.98ce332c.css",
+    "static/js/main.d495e230.js"
   ]
 }
