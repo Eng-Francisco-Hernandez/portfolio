@@ -133,13 +133,16 @@ export default function Navbar() {
                 offset={100}
                 style={{ textDecoration: "none" }}
               >
-                <Button sx={{ color: "#fff" }}>{item.title}</Button>
+                <Button sx={{ color: "#fff" }} className="layout-button">
+                  {item.title}
+                </Button>
               </AnchorLink>
             ))}
             <Button
               href={personalResume}
               variant="outlined"
               target="_blank"
+              className="layout-button"
               sx={{
                 color: colors.TEXT_TERTIARY,
                 borderColor: colors.TEXT_TERTIARY,

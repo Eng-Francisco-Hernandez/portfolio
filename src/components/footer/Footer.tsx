@@ -1,6 +1,6 @@
 import GitHubIcon from "@mui/icons-material/GitHub";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
-import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
+import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 import ScrollToTop from "react-scroll-to-top";
 import { Fab, Grid, IconButton, Typography } from "@mui/material";
 export default function Footer() {
@@ -38,13 +38,18 @@ export default function Footer() {
         smooth
         style={{
           background: "none",
-          boxShadow: "none"
+          boxShadow: "none",
         }}
         component={
           <div className="mt-lg">
-            <Fab size="small" color="primary">
+            {/* The next div has a fab button's classes to avoid nested buttons */}
+            <div
+              className="MuiButtonBase-root MuiFab-root MuiFab-circular MuiFab-sizeSmall 
+                            MuiFab-primary MuiFab-root MuiFab-circular MuiFab-sizeSmall MuiFab-primary 
+                            css-1lbzf88-MuiButtonBase-root-MuiFab-root"
+            >
               <ArrowUpwardIcon />
-            </Fab>
+            </div>
           </div>
         }
       />

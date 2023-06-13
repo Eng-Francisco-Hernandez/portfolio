@@ -42,6 +42,7 @@ export default function Introduction(props: IntroductionProps) {
           target="_blank"
           sx={{ mr: 2 }}
           variant="contained"
+          className="layout-button"
         >
           View resume
         </Button>
@@ -53,6 +54,7 @@ export default function Introduction(props: IntroductionProps) {
           <Button
             variant="outlined"
             sx={{ color: "#fff", borderColor: "#fff" }}
+            className="layout-button"
           >
             See my work
           </Button>
