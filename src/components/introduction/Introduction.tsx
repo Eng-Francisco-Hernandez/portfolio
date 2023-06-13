@@ -21,7 +21,11 @@ export default function Introduction(props: IntroductionProps) {
     >
       <Grid item xs={10}>
         <Typography variant="h6">Hello! I am</Typography>
-        <Typography color={colors.TEXT_TERTIARY} variant="h2">
+        <Typography
+          color={colors.TEXT_TERTIARY}
+          variant="h2"
+          className="gradient-primary-text"
+        >
           Francisco Hernández
         </Typography>
         <Typography variant="h4" sx={{ mb: 4 }}>

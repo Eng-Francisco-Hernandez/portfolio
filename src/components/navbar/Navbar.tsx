@@ -117,7 +117,7 @@ export default function Navbar() {
           >
             <MenuIcon />
           </IconButton>
-          <img height={45} src={personalLogo} />
+          <img alt="" height={45} src={personalLogo} />
           <Typography
             variant="h6"
             component="div"

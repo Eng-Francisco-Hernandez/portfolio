@@ -23,7 +23,12 @@ export default function Projects(props: ProjectsProps) {
   return (
     <Grid id={id} container spacing={2} sx={{ mt: 15, mb: 8 }}>
       <Grid item xs={12}>
-        <Typography color={colors.TEXT_TERTIARY} variant="h5" sx={{ mb: 2 }}>
+        <Typography
+          color={colors.TEXT_TERTIARY}
+          variant="h5"
+          sx={{ mb: 2, fontWeight: "bold" }}
+          className="gradient-primary-text"
+        >
           My projects
         </Typography>
       </Grid>
@@ -89,10 +94,17 @@ export default function Projects(props: ProjectsProps) {
                   sx={{ height: 250 }}
                   image={item.img}
                   onClick={() => window.open(item.externalLink, "_blank")}
-                  className='project-image-redirect'
+                  className="project-image-redirect"
                 />
                 <CardContent>
-                  <Typography color={colors.TEXT_TERTIARY} gutterBottom variant="h5" component="div">
+                  <Typography
+                    color={colors.TEXT_TERTIARY}
+                    gutterBottom
+                    variant="h5"
+                    component="div"
+                    sx={{ fontWeight: "bold" }}
+                    className="gradient-primary-text-variant"
+                  >
                     {item.title}
                   </Typography>
                   <Typography variant="body2" color="text.secondary">

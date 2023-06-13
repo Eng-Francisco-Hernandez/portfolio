@@ -8,7 +8,12 @@ export default function About(props: any) {
   return (
     <Grid id={id} container spacing={2} sx={{ mt: 20, mb: 8 }}>
       <Grid item xs={8}>
-        <Typography color={colors.TEXT_TERTIARY} variant="h5" sx={{ mb: 2 }}>
+        <Typography
+          color={colors.TEXT_TERTIARY}
+          variant="h5"
+          sx={{ mb: 2, fontWeight: "bold" }}
+          className="gradient-primary-text"
+        >
           About me
         </Typography>
         <Typography component={"span"} variant="body1" color="text.secondary">
@@ -22,7 +27,12 @@ export default function About(props: any) {
         {knownTechnologies.map((technology, i) => {
           return (
             <div key={i}>
-              <Typography color={colors.TEXT_TERTIARY} variant="subtitle1" sx={{ mt: 2 }}>
+              <Typography
+                color={colors.TEXT_TERTIARY}
+                variant="subtitle1"
+                sx={{ mt: 2, fontWeight: "bold" }}
+                className="gradient-primary-text-variant"
+              >
                 {technology.category}
               </Typography>
               <Typography

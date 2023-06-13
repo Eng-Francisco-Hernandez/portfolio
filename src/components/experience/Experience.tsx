@@ -27,6 +27,7 @@ function TabPanel(props: TabPanelProps) {
               component={"span"}
               variant="h6"
               color={colors.TEXT_TERTIARY}
+              className="gradient-primary-text-variant"
             >
               @{" "}
               {children.secondaryCompany
@@ -96,7 +97,12 @@ export default function Experience(props: ExperienceProps) {
   return (
     <Grid id={id} container spacing={2} sx={{ mt: 10, mb: 8 }}>
       <Grid item xs={12}>
-        <Typography color={colors.TEXT_TERTIARY} variant="h5" sx={{ mb: 2 }}>
+        <Typography
+          color={colors.TEXT_TERTIARY}
+          variant="h5"
+          sx={{ mb: 2, fontWeight: "bold" }}
+          className="gradient-primary-text"
+        >
           Where I've worked
         </Typography>
         <Box
@@ -119,6 +125,7 @@ export default function Experience(props: ExperienceProps) {
                     color: colors.TEXT_TERTIARY,
                     fontWeight: "bold",
                   }}
+                  className="gradient-primary-text-variant"
                   label={item.company}
                   {...a11yProps(i)}
                   key={i}

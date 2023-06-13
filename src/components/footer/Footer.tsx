@@ -2,7 +2,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 import ScrollToTop from "react-scroll-to-top";
-import { Fab, Grid, IconButton, Typography } from "@mui/material";
+import { Grid, IconButton, Typography } from "@mui/material";
 export default function Footer() {
   return (
     <Grid
@@ -14,7 +14,12 @@ export default function Footer() {
       sx={{ mt: 20, mb: 8 }}
     >
       <Grid item xs={12}>
-        <Typography component={"span"} variant="body1" color="text.secondary">
+        <Typography
+          component={"span"}
+          variant="body1"
+          color="text.secondary"
+          sx={{ fontWeight: "bold" }}
+        >
           Built and designed by Francisco Hernández
         </Typography>
       </Grid>
