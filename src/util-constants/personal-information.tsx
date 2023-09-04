@@ -34,10 +34,37 @@ export interface ExperienceItem {
 
 export const experienceItems: ExperienceItem[] = [
   {
+    company: "Simera",
+    secondaryCompany: "ExaCare",
+    title: "Senior Software Engineer",
+    date: "Jun 2023 - present",
+    summary:
+      "ExaCare builds software to help assisted living facilities deliver the highest possible care to their residents.",
+    tasks: [
+      `Worked on the development of a customer facing web application using TypeScript, React.js, MUI and React Query`,
+      `Built E2E tests using Playwright to test React.js application's flows`,
+      `Built endpoints in REST API and implemented new features to extend back-end functionality in project based in microservices
+      architecture using TypeScript, Sequelize and the Serverless Framework among others`,
+      `Built unit tests and integration tests using Jest to ensure the correctness of new codebase added to extend back-end functionality.`,
+      `Built migrations in Sequelize to change PostgreSQL DB tables and updated models when extending back-end project functionalities.`,
+    ],
+    technologies: [
+      "TypeScript",
+      "React.js",
+      "MUI",
+      "PostgreSQL",
+      "Sequelize",
+      "Serverless Framework",
+      "Playwright",
+      "Jest",
+      "React Query",
+    ],
+  },
+  {
     company: "Cognits",
     secondaryCompany: "ShareGRO",
     title: "Full-stack developer",
-    date: "Sep 2021 - Jan 2023",
+    date: "Sep 2021 - Feb 2023",
     summary:
       "ShareGRO is a tailored wealth management platform built on simple yet powerful peer-to-peer sharing.",
     tasks: [
@@ -131,17 +158,5 @@ export const experienceItems: ExperienceItem[] = [
       "Express.js",
       "MongoDB",
     ],
-  },
-  {
-    company: "Pragmation",
-    title: "Freelance Software engineer",
-    date: "07/2021 - 08/2021",
-    summary:
-      "Performed tasks to extend the functionality of online store of mobile airtime.",
-    tasks: [
-      "Extended functionality in Python based project to buy mobile airtime.",
-      "Integrated existing system with Reloadly API to perform actions such as buying mobile airtime with several providers in several countries",
-    ],
-    technologies: ["Python", "FastAPI"],
   },
 ];

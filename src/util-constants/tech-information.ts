@@ -20,7 +20,9 @@ export const knownTechnologies: KnownTechnologyType[] = [
     items: [
       "React.js",
       "Ionic",
+      "React Query",
       "Storybook",
+      "Playwright",
       "Apollo Client",
       "MUI",
       "Semantic UI",
@@ -28,10 +30,12 @@ export const knownTechnologies: KnownTechnologyType[] = [
       "Node.js",
       "Express.js",
       "Next.js",
+      "Jest",
       "jQuery",
       "Serverless Framework",
       "MongoDB",
       "PostgreSQL",
+      "Sequelize",
     ],
   },
   {

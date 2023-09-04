@@ -10,6 +10,7 @@ import triviaQuiz from "../assets/images/projects/trivia-quiz.png";
 import imageRecognition from "../assets/images/projects/image-recognition.png";
 import ticTacToe from "../assets/images/projects/tic-tac-toe.png";
 import dailyNews from "../assets/images/projects/daily-news.png";
+import adminDashboard from "../assets/images/projects/admin-dashboard.png";
 
 interface Technology {
   name: string;
@@ -26,6 +27,31 @@ interface ProjectItem {
 }
 
 export const projectItems: ProjectItem[] = [
+  {
+    technologies: [
+      { name: "Node.js" },
+      { name: "Express.js" },
+      { name: "MongoDB" },
+      { name: "JSON Web Token" },
+      { name: "TypeScript" },
+      { name: "React" },
+      { name: "Apollo Client" },
+      { name: "Sass" },
+      { name: "Bootstrap" },
+      {
+        name: "express-graphql",
+        url: "https://graphql.org/graphql-js/express-graphql/",
+      },
+      { name: "Recharts", url: "https://recharts.org/en-US/" },
+    ],
+    githubLink: "https://github.com/Eng-Francisco-Hernandez/admin-dashboard",
+    externalLink: "https://eng-francisco-hernandez.github.io/admin-dashboard/",
+    img: adminDashboard,
+    title: "Admin Dashboard: Role-Based Auth & Management",
+    description: `Application designed to handle user onboard and token based authentication.
+    It also offers a flexible role management feature that allows to assign specific roles to users and 
+    define custom permissions for each role to control precisely what users can and cannot do within the app.`,
+  },
   {
     technologies: [
       { name: "Node.js" },
