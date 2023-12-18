@@ -11,6 +11,7 @@ import imageRecognition from "../assets/images/projects/image-recognition.png";
 import ticTacToe from "../assets/images/projects/tic-tac-toe.png";
 import dailyNews from "../assets/images/projects/daily-news.png";
 import adminDashboard from "../assets/images/projects/admin-dashboard.png";
+import jsonFormatterImg from "../assets/images/projects/json-formatter.png";
 
 interface Technology {
   name: string;
@@ -215,6 +216,22 @@ export const projectItems: ProjectItem[] = [
     several Computer Science courses at Galileo University to manage different assignments,
     announcements and to provide interactive material for learning programming languages to 6 different
     classrooms with over 25 students each.`,
+  },
+  {
+    technologies: [
+      { name: "Node.js" },
+      { name: "TypeScript" },
+      { name: "React" },
+      { name: "MUI" },
+    ],
+    githubLink: "https://github.com/Eng-Francisco-Hernandez/JSON-Formatter",
+    externalLink: "https://eng-francisco-hernandez.github.io/JSON-Formatter",
+    img: jsonFormatterImg,
+    title: "JSON Formatter",
+    description: `The JSON Formatter Application is a user-friendly tool designed to streamline the process 
+    of formatting JSON (JavaScript Object Notation) data. JSON is a widely used data interchange format and 
+    this application provides a straightforward solution for proper formatting, essential for readability, 
+    debugging, and interoperability.`,
   },
   {
     technologies: [
