@@ -1,8 +1,9 @@
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import Box from "@mui/material/Box";
 import MenuIcon from "@mui/icons-material/Menu";
+import personalLogo from "../../assets/images/logo128.png";
 import React from "react";
-import { socialNetworkItems } from "../../util-constants";
+import { colors, socialNetworkItems } from "../../util-constants";
 import "./navbar.scss";
 import {
   AppBar,
@@ -116,24 +117,37 @@ export default function Navbar() {
           >
             <MenuIcon />
           </IconButton>
+          <img alt="" height={45} src={personalLogo} />
           <Typography
             variant="h6"
             component="div"
             sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
           >
-            Francisco Hernández
+            {/* OPTIONAL TEXT TO SUPPORT LOGO */}
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item, i) => (
-              <AnchorLink href={item.href} key={i} offset={100} style={{textDecoration: "none"}}>
-                <Button sx={{ color: "#fff" }}>{item.title}</Button>
+              <AnchorLink
+                href={item.href}
+                key={i}
+                offset={100}
+                style={{ textDecoration: "none" }}
+              >
+                <Button sx={{ color: "#fff" }} className="layout-button">
+                  {item.title}
+                </Button>
               </AnchorLink>
             ))}
             <Button
               href={personalResume}
               variant="outlined"
               target="_blank"
-              sx={{ color: "#fff", borderColor: "#fff", ml: 2 }}
+              className="layout-button"
+              sx={{
+                color: colors.TEXT_TERTIARY,
+                borderColor: colors.TEXT_TERTIARY,
+                ml: 2,
+              }}
             >
               Resume
             </Button>

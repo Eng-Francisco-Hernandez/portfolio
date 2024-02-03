@@ -1,13 +1,19 @@
 import profilePicture from "../../assets/images/Official.jpg";
 import { Grid, Typography } from "@mui/material";
 import "./about.scss";
+import { colors, knownTechnologies } from "../../util-constants";
 
 export default function About(props: any) {
   const { id } = props;
   return (
     <Grid id={id} container spacing={2} sx={{ mt: 20, mb: 8 }}>
       <Grid item xs={8}>
-        <Typography variant="h5" sx={{ mb: 2 }}>
+        <Typography
+          color={colors.TEXT_TERTIARY}
+          variant="h5"
+          sx={{ mb: 2, fontWeight: "bold" }}
+          className="gradient-primary-text"
+        >
           About me
         </Typography>
         <Typography component={"span"} variant="body1" color="text.secondary">
@@ -18,29 +24,31 @@ export default function About(props: any) {
           <br />
           Here are some of the technologies I've been working with recently
         </Typography>
-        <Typography
-          component={"span"}
-          variant="body2"
-          className="custom-col-number-list"
-        >
-          <ul>
-            <li> JavaScript (ES6+) </li>
-            <li> TypeScript </li>
-            <li> HTML</li>
-            <li> CSS</li>
-            <li> Sass</li>
-            <li> React.js</li>
-            <li> Ionic</li>
-            <li> MUI</li>
-            <li> Storybook</li>
-            <li> Apollo Client</li>
-            <li> Node.js</li>
-            <li> Express.js</li>
-            <li> MongoDB</li>
-            <li> PostgreSQL</li>
-            <li> Python</li>
-          </ul>
-        </Typography>
+        {knownTechnologies.map((technology, i) => {
+          return (
+            <div key={i}>
+              <Typography
+                color={colors.TEXT_TERTIARY}
+                variant="subtitle1"
+                sx={{ mt: 2, fontWeight: "bold" }}
+                className="gradient-primary-text-variant"
+              >
+                {technology.category}
+              </Typography>
+              <Typography
+                component={"span"}
+                variant="body2"
+                className="custom-col-number-list"
+              >
+                <ul>
+                  {technology.items.map((item, index) => {
+                    return <li key={index}>{item}</li>;
+                  })}
+                </ul>
+              </Typography>
+            </div>
+          );
+        })}
       </Grid>
       <Grid item xs={4}>
         <Grid item xs={4}>

@@ -24,7 +24,11 @@ export default function Contact(props: ContactProps) {
       sx={{ mt: 20, mb: 8 }}
     >
       <Grid item xs={12}>
-        <Typography variant="h5" sx={{ mb: 2 }}>
+        <Typography
+          variant="h5"
+          sx={{ mb: 2, fontWeight: "bold" }}
+          className="gradient-primary-text"
+        >
           Contact me
         </Typography>
       </Grid>

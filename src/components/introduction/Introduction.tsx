@@ -1,5 +1,6 @@
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { Button, Grid, Typography } from "@mui/material";
+import { colors } from "../../util-constants";
 const personalResume = require("../../assets/files/personal_resume.pdf");
 interface IntroductionProps {
   id?: string;
@@ -19,11 +20,15 @@ export default function Introduction(props: IntroductionProps) {
       style={{ minHeight: "100vh" }}
     >
       <Grid item xs={10}>
-        <Typography variant="h6" color="text.secondary">
-          Hello! I am
+        <Typography variant="h6">Hello! I am</Typography>
+        <Typography
+          color={colors.TEXT_TERTIARY}
+          variant="h2"
+          className="gradient-primary-text"
+        >
+          Francisco Hernández
         </Typography>
-        <Typography variant="h2">Francisco Hernández</Typography>
-        <Typography variant="h4" sx={{ mb: 4 }} color="text.secondary">
+        <Typography variant="h4" sx={{ mb: 4 }}>
           And I love software development!
         </Typography>
         <Typography variant="h6">
@@ -41,13 +46,19 @@ export default function Introduction(props: IntroductionProps) {
           target="_blank"
           sx={{ mr: 2 }}
           variant="contained"
+          className="layout-button"
         >
           View resume
         </Button>
-        <AnchorLink href="#Work" offset={100} style={{textDecoration: "none"}}>
+        <AnchorLink
+          href="#Work"
+          offset={100}
+          style={{ textDecoration: "none" }}
+        >
           <Button
             variant="outlined"
             sx={{ color: "#fff", borderColor: "#fff" }}
+            className="layout-button"
           >
             See my work
           </Button>
